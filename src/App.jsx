@@ -42,11 +42,17 @@ const FOUNDER_REASONS = [
 ];
 
 const TIMELINE = [
-  { period: "Now", current: true, role: "Senior Technical Systems Engineer", co: "Clearcloud Internet Solutions",
+  { period: "Now", current: true, role: "Founder & CEO", co: "Warp Laboratory Inc — Building Droplet",
     bullets: [
-      "Lead architecture and delivery for industrial, government, and critical-infra projects at enterprise scale.",
-      "Stand up SOPs, workflows, and tech stacks that scale across crews.",
-      "Mentor engineers and technicians; own QA/QC and risk.",
+      "Building Droplet — the personal AI cloud. One on-device appliance replacing fragmented consumer services.",
+      "Full-time founder; working code from prototype to product. Privacy-first by architecture.",
+      "Solo build, integration done on-device. Q2 2026 close.",
+    ] },
+  { period: "2026", role: "Senior Technical Systems Engineer", co: "Clearcloud Internet Solutions",
+    bullets: [
+      "Led architecture and delivery for industrial, government, and critical-infra projects at enterprise scale.",
+      "Stood up SOPs, workflows, and tech stacks that scale across crews.",
+      "Mentored engineers and technicians; owned QA/QC and risk. Departed via workforce reduction (project-volume slowdown), not performance — see reference letter.",
     ] },
   { period: "2025", role: "Technical Systems Engineer", co: "Clearcloud Internet Solutions",
     bullets: [

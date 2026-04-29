@@ -1,6 +1,12 @@
 import * as React from 'react';
-import { createRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import App from './App.jsx';
 import './styles-v4.css';
 
-createRoot(document.getElementById('root')).render(<App />);
+const root = document.getElementById('root');
+// If the build was prerendered (root has children), hydrate; otherwise render fresh.
+if (root.firstChild) {
+  hydrateRoot(root, <App />);
+} else {
+  createRoot(root).render(<App />);
+}
