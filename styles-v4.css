@@ -1262,7 +1262,12 @@ section:first-of-type { padding-top: 56px; padding-bottom: 56px; }
 
 .reference-card {
   margin-top: 28px;
-  padding: 22px 26px 20px;
+  /* Break out of the 920px .wrap container to span ~96vw on every viewport.
+     50% is half the parent's content width, 48vw is 48% of viewport — the
+     difference is the negative margin needed to escape the wrap. */
+  margin-left: calc(50% - 48vw);
+  margin-right: calc(50% - 48vw);
+  padding: 24px clamp(22px, 4vw, 44px) 22px;
   border: 1px solid var(--rule);
   border-radius: 10px;
   background: var(--paper);
