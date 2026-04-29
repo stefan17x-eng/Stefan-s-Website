@@ -24,8 +24,8 @@
   --sans: "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
 
-  --maxw: 920px;
-  --pad-x: clamp(20px, 4vw, 32px);
+  --maxw: 1600px;
+  --pad-x: clamp(20px, 4vw, 48px);
   --tap: cubic-bezier(0.22, 0.8, 0.2, 1);
 }
 
@@ -1261,26 +1261,11 @@ section:first-of-type { padding-top: 56px; padding-bottom: 56px; }
    ============================================================ */
 
 .reference-card {
-  margin-top: 36px;
-  /* Full-bleed: break out of the 920px .wrap to span the entire viewport. */
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  width: 100vw;
-  padding: 32px clamp(20px, 5vw, 80px) 30px;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
-  border-left: none;
-  border-right: none;
-  border-radius: 0;
+  margin-top: 28px;
+  padding: 24px clamp(22px, 4vw, 44px) 22px;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
   background: var(--paper);
-  box-sizing: border-box;
-}
-/* Re-cap the inner content so it still reads at sane line-lengths on
-   ultrawide screens, even though the card itself is full-bleed. */
-.reference-card > * {
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .reference-eyebrow {
   display: flex;
