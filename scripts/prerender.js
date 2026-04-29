@@ -50,7 +50,13 @@ async function main() {
   const server = await serve(DIST, PORT);
 
   console.log('[prerender] launching puppeteer');
-  const browser = await puppeteer.launch({ headless: 'new' });
+  const browser = await puppeteer.launch({
+    headless: 'new',
+    // GitHub-hosted Ubuntu runners disable unprivileged user namespaces, so
+    // Chromium's default sandbox can't initialize. Safe to disable here —
+    // we only ever load our own localhost build artifact.
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  });
   try {
     const page = await browser.newPage();
     await page.setViewport({ width: 1280, height: 900, deviceScaleFactor: 1 });
