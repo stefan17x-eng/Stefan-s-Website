@@ -1,4 +1,11 @@
-/* global React, ReactDOM */
+import * as React from 'react';
+import {
+  useTweaks,
+  TweaksPanel,
+  TweakSection,
+  TweakRadio,
+} from './TweaksPanel.jsx';
+
 const { useState, useEffect } = React;
 
 const NAV = [
@@ -747,9 +754,7 @@ function App() {
   const active = useScrollSpy();
   useReveal();
 
-  const [tweaks, setTweak] = window.useTweaks
-    ? window.useTweaks(TWEAK_DEFAULTS)
-    : [TWEAK_DEFAULTS, () => {}];
+  const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
 
   useEffect(() => {
     const r = document.documentElement;
@@ -778,10 +783,6 @@ function App() {
       r.style.setProperty("--rule-2", "#ebedf1");
     }
   }, [tweaks]);
-
-  const TweaksPanel  = window.TweaksPanel;
-  const TweakSection = window.TweakSection;
-  const TweakRadio   = window.TweakRadio;
 
   return (
     <>
@@ -829,5 +830,4 @@ function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App/>);
+export default App;
