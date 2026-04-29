@@ -302,7 +302,7 @@ function Topnav({ active }) {
         <a href="#top" className="brand">
           <span className="mark">SC</span>
           <span><b>Stefan Cruceru</b></span>
-          <span className="role">/ Founder · Droplet</span>
+          <span className="role">/ Founder · Warp Laboratory</span>
         </a>
         <nav className="topnav-links">
           {NAV.map(n => (
@@ -333,7 +333,7 @@ function Hero() {
           <span className="hn-line">Cruceru</span>
         </div>
         <div className="np-rule"/>
-        <div className="np-role">Founder &amp; CEO &nbsp;·&nbsp; <b>Droplet</b> &nbsp;—&nbsp; The Personal AI Cloud</div>
+        <div className="np-role">Founder &amp; CEO &nbsp;·&nbsp; <b>Warp Laboratory Inc</b> &nbsp;—&nbsp; Building Droplet, The Personal AI Cloud</div>
       </div>
 
       <div className="hero-badges">
