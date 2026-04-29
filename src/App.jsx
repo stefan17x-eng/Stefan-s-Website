@@ -43,46 +43,54 @@ const FOUNDER_REASONS = [
 
 const TIMELINE = [
   { period: "Now", current: true, role: "Founder & CEO", co: "Warp Laboratory Inc — Building Droplet",
+    tags: ["Founder", "Edge AI", "On-device", "Privacy-first", "Solo build"],
     bullets: [
       "Building Droplet — the personal AI cloud. One on-device appliance replacing fragmented consumer services.",
       "Full-time founder; working code from prototype to product. Privacy-first by architecture.",
       "Solo build, integration done on-device. Q2 2026 close.",
     ] },
   { period: "2026", role: "Senior Technical Systems Engineer", co: "Clearcloud Internet Solutions",
+    tags: ["Architecture", "Industrial / gov", "SOPs", "QA/QC", "Mentoring"],
     bullets: [
       "Led architecture and delivery for industrial, government, and critical-infra projects at enterprise scale.",
       "Stood up SOPs, workflows, and tech stacks that scale across crews.",
       "Mentored engineers and technicians; owned QA/QC and risk. Departed via workforce reduction (project-volume slowdown), not performance — see reference letter.",
     ] },
   { period: "2025", role: "Technical Systems Engineer", co: "Clearcloud Internet Solutions",
+    tags: ["System design", "Low-V", "Networking", "Engineering docs"],
     bullets: [
       "System design and execution across complex security, low-V, and networked environments.",
       "Engineering documentation aligning design intent with field reality.",
       "Liaison between engineering, PMs, and field crews.",
     ] },
   { period: "2024", role: "Field Engineer", co: "Clearcloud Internet Solutions",
+    tags: ["IT / CCTV", "Access control", "SCE", "Regulated", "As-builts"],
     bullets: [
       "Designed, installed, and commissioned IT, CCTV, and access control for Southern California Edison.",
       "Troubleshooting, optimization, QA/QC, as-builts in regulated environments.",
       "Trained clients and internal teams; standards adopted as baseline.",
     ] },
   { period: "2023", role: "Lead Technician", co: "Clearcloud Internet Solutions",
+    tags: ["Software House", "Bosch", "Cisco", "Server rooms", "Field lead"],
     bullets: [
       "Led low-voltage deployments for SCE on Software House, Bosch, Cisco.",
       "Coordinated multi-site server-room and infrastructure installs.",
       "Field leadership, documentation, safety oversight.",
     ] },
   { period: "2023", role: "Low-Voltage Lead Technician", co: "TechOne Solutions (Contract)",
+    tags: ["Server rooms", "Multi-site", "Site assessments", "Standards"],
     bullets: [
       "Server-room and enterprise low-voltage installs across multiple sites.",
       "Site assessments and tailored solutions to industry standards.",
     ] },
   { period: "2022", role: "Fiber Install Technician", co: "Frontier Internet (Contract)",
+    tags: ["Fiber-optic", "OTDR", "Network testing", "Restoration"],
     bullets: [
       "Installed and maintained fiber-optic infrastructure across Orange County.",
       "Network testing, fault isolation, service restoration.",
     ] },
   { period: "2019", role: "PM & Sr. Installation Specialist", co: "Secured Volts NY",
+    tags: ["CCTV", "International rollouts", "Team lead", "Airtable", "HubSpot"],
     bullets: [
       "CCTV and low-voltage projects for high-profile clients including international rollouts.",
       "Built and led technical teams; ran ops on Airtable and HubSpot.",
@@ -549,11 +557,19 @@ function XpRow({ row, idx, openIdx, setOpenIdx }) {
       <div className="xp-period">
         {row.current && <span className="now">● </span>}{row.period}
       </div>
-      <div>
+      <div className="xp-main">
         <div className="xp-role">{row.role}</div>
         <div className="xp-co">{row.co}</div>
+        {row.tags && (
+          <div className="xp-tags">
+            {row.tags.map((t, i) => <span key={i}>{t}</span>)}
+          </div>
+        )}
       </div>
-      <div className="xp-toggle">›</div>
+      <div className="xp-toggle">
+        <span className="xp-toggle-label">{isOpen ? "Hide details" : "Read more"}</span>
+        <span className="xp-toggle-chevron">›</span>
+      </div>
       <div className="xp-detail">
         <div>
           <ul>{row.bullets.map((b, i) => <li key={i}>{b}</li>)}</ul>
