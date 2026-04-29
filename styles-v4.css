@@ -1256,3 +1256,77 @@ section:first-of-type { padding-top: 56px; padding-bottom: 56px; }
   text-wrap: pretty;
 }
 
+/* ============================================================
+   Reference card (Experience section · §05.R)
+   ============================================================ */
+
+.reference-card {
+  margin-top: 28px;
+  padding: 22px 26px 20px;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--paper);
+}
+.reference-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.reference-tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  padding: 3px 8px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+.reference-quote {
+  margin: 0 0 16px;
+  padding: 0;
+  border: none;
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.55;
+  color: var(--ink);
+  font-weight: 400;
+  text-wrap: pretty;
+}
+.reference-attr {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+}
+.reference-name b {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ink);
+}
+.reference-name span {
+  display: block;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-2);
+  margin-top: 2px;
+}
+.reference-link {
+  font-family: var(--mono);
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 2px;
+  transition: border-color 0.2s var(--tap);
+  white-space: nowrap;
+}
+.reference-link:hover { border-color: var(--ink); }
+.reference-link .arrow { display: inline-block; transition: transform 0.2s var(--tap); }
+.reference-link:hover .arrow { transform: translateX(3px); }
+

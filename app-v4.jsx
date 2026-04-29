@@ -564,6 +564,23 @@ function Experience() {
           <XpRow key={i} row={row} idx={i} openIdx={openIdx} setOpenIdx={setOpenIdx}/>
         ))}
       </div>
+      <div className="reference-card" data-anim>
+        <div className="reference-eyebrow">
+          <span className="reference-tag">Reference · §05.R</span>
+        </div>
+        <blockquote className="reference-quote">
+          "What set Stefan apart was his ability to think beyond individual components and focus on how systems actually perform in real-world conditions. He understood configuration discipline, system dependencies, and the operational impact of design decisions."
+        </blockquote>
+        <div className="reference-attr">
+          <div className="reference-name">
+            <b>Michael Gonzalez</b>
+            <span>Chief Technology Officer · Clear Cloud Solutions</span>
+          </div>
+          <a href="reference-michael-gonzalez.pdf" target="_blank" rel="noopener" className="reference-link">
+            View full letter <span className="arrow">→</span>
+          </a>
+        </div>
+      </div>
     </section>
   );
 }
