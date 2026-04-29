@@ -404,6 +404,17 @@ function About() {
         <span className="label">About · Founder Brief</span>
         <span className="rule"/>
       </div>
+      <dl className="founder-facts" data-anim aria-label="Founder fact sheet">
+        <div><dt>Founder</dt><dd>Stefan Cruceru · Founder &amp; CEO</dd></div>
+        <div><dt>Company</dt><dd>Warp Laboratory Inc</dd></div>
+        <div><dt>Product</dt><dd>Droplet — the personal AI cloud</dd></div>
+        <div><dt>Stage</dt><dd>Working code · Solo build</dd></div>
+        <div><dt>Status</dt><dd>Full-time founder · Q2 2026</dd></div>
+        <div><dt>Domain</dt><dd>Edge AI · Privacy-first hardware · On-device integration</dd></div>
+        <div><dt>Background</dt><dd>6+ yrs field engineering · OT / IT</dd></div>
+        <div><dt>Based</dt><dd>Costa Mesa, California, USA</dd></div>
+        <div><dt>Open to</dt><dd>Investors · Design partners · Advisors · Operators</dd></div>
+      </dl>
       <p data-anim>
         I'm <strong>building <a href="#droplet" className="hero-inline">Droplet</a> full-time</strong> —
         a personal AI cloud that lives on a single on-device appliance. The thesis:

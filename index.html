@@ -7,7 +7,10 @@
 
   <title>Stefan Cruceru — Founder & CEO, Warp Laboratory Inc</title>
   <meta name="description" content="Founder & CEO of Warp Laboratory Inc, building Droplet — the personal AI cloud. One on-device appliance replaces a tangle of fragmented consumer services. Privacy-first by architecture. Working code, full-time founder."/>
+  <meta name="author" content="Stefan Cruceru"/>
+  <meta name="keywords" content="Stefan Cruceru, Warp Laboratory, Droplet, personal AI cloud, edge AI, on-device AI, privacy-first hardware, founder, CEO, YC application, edge appliance, integrated home AI, Costa Mesa, field engineering, OT IT convergence"/>
   <link rel="canonical" href="https://stefancruceru.com/"/>
+  <link rel="alternate" type="text/plain" title="Founder brief (plain text)" href="/founder-brief.txt"/>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website"/>
@@ -28,28 +31,78 @@
   <meta name="twitter:image" content="https://stefancruceru.com/og-image.png"/>
   <meta name="twitter:image:alt" content="Stefan Cruceru — Founder & CEO, Warp Laboratory Inc · Building Droplet"/>
 
-  <!-- JSON-LD Person schema -->
+  <!-- JSON-LD: Person + Organization + Product graph for crawlers and LLM research tools -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Stefan Cruceru",
-    "url": "https://stefancruceru.com/",
-    "jobTitle": "Founder & CEO",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Warp Laboratory Inc"
-    },
-    "description": "Founder & CEO of Warp Laboratory Inc, building Droplet — the personal AI cloud.",
-    "sameAs": [
-      "https://www.linkedin.com/in/stefan-cruceru"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Costa Mesa",
-      "addressRegion": "CA",
-      "addressCountry": "US"
-    }
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://stefancruceru.com/#stefan",
+        "name": "Stefan Cruceru",
+        "url": "https://stefancruceru.com/",
+        "jobTitle": "Founder & CEO",
+        "worksFor": { "@id": "https://stefancruceru.com/#warp-laboratory" },
+        "founderOf": { "@id": "https://stefancruceru.com/#warp-laboratory" },
+        "description": "Founder & CEO of Warp Laboratory Inc, building Droplet — the personal AI cloud. Six years of field engineering across utility, defense-adjacent, and international retail deployments.",
+        "knowsAbout": [
+          "Edge AI",
+          "On-device AI",
+          "Privacy-first hardware",
+          "Personal AI cloud",
+          "Physical security systems",
+          "Industrial OT/IT convergence",
+          "Field engineering",
+          "Access control",
+          "Video management systems",
+          "Radar and UAS detection",
+          "PLC and sensor aggregation"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/stefan-cruceru"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Costa Mesa",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://stefancruceru.com/#warp-laboratory",
+        "name": "Warp Laboratory Inc",
+        "alternateName": "Warp Lab",
+        "url": "https://stefancruceru.com/",
+        "founder": { "@id": "https://stefancruceru.com/#stefan" },
+        "description": "Privacy-first edge AI hardware company building Droplet, the personal AI cloud.",
+        "makesOffer": { "@id": "https://stefancruceru.com/#droplet" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Costa Mesa",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://stefancruceru.com/#droplet",
+        "name": "Droplet",
+        "category": "Edge AI Appliance",
+        "description": "The personal AI cloud — a single on-device appliance integrating connected systems in a home or small business under one auth boundary, one update channel, and no required cloud accounts. Privacy-first by architecture. AI safety by construction: irreversible operations are blocked for AI by design.",
+        "brand": { "@id": "https://stefancruceru.com/#warp-laboratory" },
+        "manufacturer": { "@id": "https://stefancruceru.com/#warp-laboratory" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://stefancruceru.com/#site",
+        "url": "https://stefancruceru.com/",
+        "name": "Stefan Cruceru — Founder & CEO, Warp Laboratory Inc",
+        "about": { "@id": "https://stefancruceru.com/#stefan" },
+        "publisher": { "@id": "https://stefancruceru.com/#warp-laboratory" },
+        "inLanguage": "en-US"
+      }
+    ]
   }
   </script>
 

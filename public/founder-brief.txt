@@ -1,0 +1,154 @@
+Stefan Cruceru — Founder Brief
+==============================
+
+Founder & CEO of Warp Laboratory Inc, building Droplet — the personal AI cloud.
+Working code, full-time founder. Privacy-first by architecture.
+
+Last updated: 2026-04
+
+Founder
+-------
+Name:        Stefan Cruceru
+Role:        Founder & CEO
+Company:     Warp Laboratory Inc (alt: "Warp Lab")
+Based:       Costa Mesa, California, United States
+Status:      Full-time founder · Q2 2026
+Email:       Stefan17x@gmail.com
+LinkedIn:    https://www.linkedin.com/in/stefan-cruceru
+Site:        https://stefancruceru.com/
+Reference:   https://stefancruceru.com/reference-michael-gonzalez.pdf
+
+Company
+-------
+Name:        Warp Laboratory Inc
+Type:        Privacy-first edge AI hardware company
+Product:     Droplet — the personal AI cloud
+HQ:          Costa Mesa, California, United States
+Stage:       Working code · Solo build · Pre-seed
+Close:       Q2 2026
+Open to:     Investors, design partners, advisors, operators with networks
+             in consumer hardware, privacy-brand portfolios, smart-home
+             installer channels, or the edge-AI thesis.
+
+Product (Droplet)
+-----------------
+Category:    Edge AI Appliance · Personal AI Cloud
+Thesis:      One on-device appliance integrates the connected systems in a
+             home or small business under one auth boundary, one update
+             channel, and no required cloud accounts.
+
+Pillars:
+ 1. On-device by default. Nothing leaves the box unless the operator
+    explicitly sends it.
+ 2. One auth boundary. One login, one update channel, one safety policy
+    across the whole stack.
+ 3. Open-source by composition. No paid SaaS dependency in the critical
+    path. The operator can leave at any time.
+ 4. AI safety by construction. An agent doctrine for hardware — irreversible
+    operations are blocked for AI by design.
+
+Status:
+ - Control plane:        Working
+ - Identity / auth:      Working
+ - On-device AI:         Working
+ - Network isolation:    Working
+ - Hardware v1:          In progress
+ - Mobile + remote:      In progress
+ - Boots from a single command on a fresh device.
+
+Founder-Market Fit
+------------------
+1. I am the user. Six years operating inside fragmented, multi-vendor
+   consumer-tech stacks. Every seam I am designing out, I have lived with.
+
+2. Hard customers, already shipped. Utility, defense-adjacent, and
+   international retail deployments — environments where downtime writes
+   the headline. Droplet's eventual buyers are softer versions of
+   customers I have already delivered for.
+
+3. Working code, not slides. The integration is real. Boots from one
+   command on a fresh device. Built and assembled solo, with a clear
+   path from prototype to product.
+
+4. Founder-market fit is uncomfortably specific. Operator instinct +
+   field engineering + control-plane software, in one person.
+
+Background (6+ years field engineering)
+---------------------------------------
+2026  Senior Technical Systems Engineer · Clearcloud Internet Solutions
+      Architecture & delivery for industrial / government / critical-infra.
+      Stood up SOPs, workflows, tech stacks. Mentored engineers. Departed
+      via workforce reduction (project-volume slowdown), not performance.
+
+2025  Technical Systems Engineer · Clearcloud Internet Solutions
+      System design across security, low-V, and networked environments.
+
+2024  Field Engineer · Clearcloud Internet Solutions
+      Designed, installed, commissioned IT/CCTV/access control for SCE.
+
+2023  Lead Technician · Clearcloud Internet Solutions
+      Low-voltage deployments for SCE on Software House, Bosch, Cisco.
+
+2023  Low-Voltage Lead Technician · TechOne Solutions (Contract)
+      Server-room and enterprise low-voltage installs across multiple sites.
+
+2022  Fiber Install Technician · Frontier Internet (Contract)
+      Fiber-optic infrastructure across Orange County. OTDR, fault isolation.
+
+2019  PM & Sr. Installation Specialist · Secured Volts NY
+      CCTV and low-voltage projects including international rollouts.
+
+Domain Stack
+------------
+Access Control:        Software House, Lenel, Gallagher, HID, Mercury,
+                       Genetec, Aiphone, Zenitel
+Video Management:      Bosch, Genetec, Milestone, Geutebruck, FLIR, Surveill
+Radar / UAS Detection: Magos, Echodyne, Dedrone
+Servers & Networking:  Cisco, Dell, Linux, Windows Server, Microsoft 365
+Cloud & Automation:    Azure, AWS, GCP, PowerShell, Python, Docker
+Sensor Aggregation:    Ladder Logic, Custom API, PLC
+
+Selected Operator Proof Points
+------------------------------
+DWG-001 · Utility · NERC
+        Substation security modernization for Southern California Edison.
+        Integrated CCTV, access control, and network systems across
+        multiple substations. Standardized installs, full QA/QC, as-builts.
+
+DWG-002 · Government
+        UAS detection + radar perimeter for confidential DoD-adjacent
+        client. Architecture and integration for radar, UAS detection,
+        counter-drone aggregation. Custom API into VMS for unified SA.
+
+DWG-003 · Retail / Logistics
+        International CCTV rollout for premium retail and logistics
+        (via Secured Volts). Multi-country deployments. Built and led
+        technical teams.
+
+DWG-004 · Utility · Fiber
+        Fiber-optic plant expansion for Frontier Internet. Install,
+        splicing, commissioning across Orange County. OTDR, fault
+        isolation, restoration.
+
+Credentials
+-----------
+Gallagher, Hirsch, Magos, Axis, CUI · DoD, NERC Cyber, NERC Physical
+
+Reference
+---------
+"What set Stefan apart was his ability to think beyond individual
+components and focus on how systems actually perform in real-world
+conditions. He understood configuration discipline, system dependencies,
+and the operational impact of design decisions."
+  — Michael Gonzalez, CTO, Clear Cloud Solutions
+  Full letter: https://stefancruceru.com/reference-michael-gonzalez.pdf
+
+Contact
+-------
+Email:    Stefan17x@gmail.com
+Phone:    +1 609 712 0920
+LinkedIn: https://www.linkedin.com/in/stefan-cruceru
+Based:    Costa Mesa, California, USA
+
+# This file is the canonical plain-text founder brief for stefancruceru.com,
+# published for crawlers, search-engine bots, and LLM-based research tools.

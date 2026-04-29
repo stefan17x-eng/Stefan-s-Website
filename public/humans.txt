@@ -1,0 +1,19 @@
+/* TEAM */
+
+Founder & CEO: Stefan Cruceru
+Site:          https://stefancruceru.com/
+LinkedIn:      https://www.linkedin.com/in/stefan-cruceru
+Location:      Costa Mesa, California, USA
+
+/* COMPANY */
+
+Warp Laboratory Inc — Privacy-first edge AI hardware.
+Building Droplet, the personal AI cloud.
+
+/* SITE */
+
+Last update:   2026-04
+Built with:    Vite, React, hand-written CSS, Puppeteer prerender
+Hosted on:     GitHub Pages
+Standards:     HTML5, JSON-LD, Open Graph, robots.txt, sitemap.xml,
+               humans.txt, llms.txt
