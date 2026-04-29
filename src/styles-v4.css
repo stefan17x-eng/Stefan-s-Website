@@ -473,6 +473,74 @@ section:first-of-type { padding-top: 56px; padding-bottom: 56px; }
   .founder-facts > div:nth-last-child(-n+2) { border-bottom: 0; }
 }
 
+/* Founding Team grid — three cofounder cards under the founder fact sheet */
+.founding-team { margin: 8px 0 28px 0; }
+.ft-eye {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-3);
+}
+.ft-lab { letter-spacing: 0.06em; text-transform: uppercase; }
+.ft-rule { flex: 1; height: 1px; background: var(--rule); }
+.ft-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--paper);
+  overflow: hidden;
+}
+.ft-card {
+  padding: 16px 18px;
+  border-right: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+.ft-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px; height: 12px;
+  background: var(--signal);
+}
+.ft-card:last-child { border-right: 0; }
+.ft-name { font-weight: 600; font-size: 15px; color: var(--ink); }
+.ft-role {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.ft-blurb { margin: 4px 0 6px; font-size: 13px; color: var(--ink-2); line-height: 1.45; }
+.ft-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-family: var(--mono);
+  font-size: 11px;
+  margin-top: auto;
+}
+.ft-links a {
+  color: var(--ink-2);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--rule);
+  padding-bottom: 1px;
+}
+.ft-links a:hover { color: var(--signal-deep); border-bottom-color: var(--signal); }
+.ft-arrow { color: var(--ink-4); }
+@media (max-width: 720px) {
+  .ft-grid { grid-template-columns: 1fr; }
+  .ft-card { border-right: 0; border-bottom: 1px solid var(--rule); }
+  .ft-card:last-child { border-bottom: 0; }
+}
+
 /* Schematic decoration — ladder rung in top-right of hero */
 .hero-schem {
   position: absolute;

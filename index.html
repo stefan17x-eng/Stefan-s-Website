@@ -44,6 +44,10 @@
         "jobTitle": "Founder & CEO",
         "worksFor": { "@id": "https://stefancruceru.com/#warp-laboratory" },
         "founderOf": { "@id": "https://stefancruceru.com/#warp-laboratory" },
+        "colleague": [
+          { "@id": "https://stefancruceru.com/#romain" },
+          { "@id": "https://stefancruceru.com/#samantha" }
+        ],
         "description": "Founder & CEO of Warp Laboratory Inc, building Droplet — the personal AI cloud. Six years of field engineering across utility, defense-adjacent, and international retail deployments.",
         "knowsAbout": [
           "Edge AI",
@@ -69,13 +73,53 @@
         }
       },
       {
+        "@type": "Person",
+        "@id": "https://stefancruceru.com/#romain",
+        "name": "Romain Jouffret",
+        "url": "https://romainjouffret.com/",
+        "jobTitle": "CPO & Software Lead",
+        "worksFor": { "@id": "https://stefancruceru.com/#warp-laboratory" },
+        "founderOf": { "@id": "https://stefancruceru.com/#warp-laboratory" },
+        "colleague": [
+          { "@id": "https://stefancruceru.com/#stefan" },
+          { "@id": "https://stefancruceru.com/#samantha" }
+        ],
+        "description": "Co-founder, CPO and software lead at Warp Laboratory Inc. Software engineer building intelligent, lightning-fast systems.",
+        "sameAs": [
+          "https://www.linkedin.com/in/romainjouffret",
+          "https://romainjouffret.com/"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://stefancruceru.com/#samantha",
+        "name": "Samantha Rubinchik",
+        "url": "https://samantharubinchik.com/",
+        "jobTitle": "CFO",
+        "worksFor": { "@id": "https://stefancruceru.com/#warp-laboratory" },
+        "founderOf": { "@id": "https://stefancruceru.com/#warp-laboratory" },
+        "colleague": [
+          { "@id": "https://stefancruceru.com/#stefan" },
+          { "@id": "https://stefancruceru.com/#romain" }
+        ],
+        "description": "Co-founder and CFO at Warp Laboratory Inc. Operator who underwrites risk and ships.",
+        "sameAs": [
+          "https://samantharubinchik.com/"
+        ]
+      },
+      {
         "@type": "Organization",
         "@id": "https://stefancruceru.com/#warp-laboratory",
         "name": "Warp Laboratory Inc",
         "alternateName": "Warp Lab",
         "url": "https://stefancruceru.com/",
-        "founder": { "@id": "https://stefancruceru.com/#stefan" },
-        "description": "Privacy-first edge AI hardware company building Droplet, the personal AI cloud.",
+        "founder": [
+          { "@id": "https://stefancruceru.com/#stefan" },
+          { "@id": "https://stefancruceru.com/#romain" },
+          { "@id": "https://stefancruceru.com/#samantha" }
+        ],
+        "numberOfEmployees": { "@type": "QuantitativeValue", "value": 3 },
+        "description": "Privacy-first edge AI hardware company building Droplet, the personal AI cloud. Three-founder team based in Costa Mesa, California.",
         "makesOffer": { "@id": "https://stefancruceru.com/#droplet" },
         "address": {
           "@type": "PostalAddress",

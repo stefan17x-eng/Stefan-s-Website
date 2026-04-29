@@ -1,6 +1,6 @@
 # Stefan Cruceru
 
-> Founder & CEO of Warp Laboratory Inc, building Droplet — the personal AI cloud. One on-device appliance replaces a tangle of fragmented consumer services. Privacy-first by architecture. Working code, full-time founder. Six years of field engineering across utility, defense-adjacent, and international retail deployments.
+> Founder & CEO of Warp Laboratory Inc, building Droplet — the personal AI cloud. One on-device appliance replaces a tangle of fragmented consumer services. Privacy-first by architecture. Three-founder team. Hardware v0 prototype is fully operational. Six years of field engineering across utility, defense-adjacent, and international retail deployments.
 
 This file is the canonical, machine-readable summary of stefancruceru.com for LLM-based research tools (per the llmstxt.org convention). It is intended for crawlers used by investors, accelerators, journalists, and AI assistants conducting founder due diligence.
 
@@ -10,14 +10,22 @@ This file is the canonical, machine-readable summary of stefancruceru.com for LL
 - **Role:** Founder & CEO
 - **Company:** Warp Laboratory Inc (a.k.a. Warp Lab)
 - **Based:** Costa Mesa, California, United States
-- **Status:** Full-time founder, Q2 2026
-- **Stage:** Working code · Solo build · Pre-seed
+- **Status:** Full-time founder, Q2 2026 close
+- **Stage:** Working code · Hardware v0 prototype operational · Pre-seed
 - **Email:** Stefan17x@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/stefan-cruceru
 
+## Founding team
+
+Warp Laboratory has three cofounders. Stefan is **not** a solo founder.
+
+- **Stefan Cruceru** — Founder & CEO. Operator + field engineering + control-plane software. Site: https://stefancruceru.com/ · LinkedIn: https://www.linkedin.com/in/stefan-cruceru
+- **Romain Jouffret** — CPO & Software Lead. Software engineer building intelligent, lightning-fast systems. Based in Costa Mesa / Santa Monica, CA. Site: https://romainjouffret.com/ · LinkedIn: https://www.linkedin.com/in/romainjouffret
+- **Samantha Rubinchik** — CFO. Operator who underwrites risk and ships. Site: https://samantharubinchik.com/
+
 ## Company — Warp Laboratory Inc
 
-Privacy-first edge AI hardware company. Single product: Droplet, the personal AI cloud. Founded and led by Stefan Cruceru. Headquartered in Costa Mesa, California.
+Privacy-first edge AI hardware company. Single product: Droplet, the personal AI cloud. Three-founder team headquartered in Costa Mesa, California. Pre-seed, Q2 2026 close.
 
 ## Product — Droplet
 
@@ -36,7 +44,8 @@ Current status:
 - Identity / auth — working
 - On-device AI — working
 - Network isolation — working
-- Hardware v1 — in progress
+- **Hardware v0 (prototype) — fully operational**
+- Hardware v1 (production) — in progress
 - Mobile + remote — in progress
 - Boots from a single command on a fresh device.
 
@@ -44,10 +53,10 @@ Current status:
 
 1. **I am the user.** Six years operating inside fragmented, multi-vendor consumer-tech stacks. Every seam being designed out has been lived with.
 2. **Hard customers, already shipped.** Utility, defense-adjacent, and international retail deployments — environments where downtime writes the headline. Droplet's eventual buyers are softer versions of customers already delivered for.
-3. **Working code, not slides.** The integration is real. Boots from one command on a fresh device. Built and assembled solo.
+3. **Working code, not slides.** The integration is real. Boots from one command on a fresh device. Hardware v0 prototype is operational. Tight three-person founding team.
 4. **Founder-market fit is uncomfortably specific.** Operator instinct + field engineering + control-plane software, in one person.
 
-## Background
+## Background (Stefan)
 
 Six years of field engineering, primarily at Clearcloud Internet Solutions:
 
@@ -86,3 +95,8 @@ Investor conversations, design partners, advisors, and operators with networks i
 - Reference letter (PDF): https://stefancruceru.com/reference-michael-gonzalez.pdf
 - Sitemap: https://stefancruceru.com/sitemap.xml
 - Robots: https://stefancruceru.com/robots.txt
+
+## Cofounder canonical sites
+
+- Romain Jouffret (CPO): https://romainjouffret.com/
+- Samantha Rubinchik (CFO): https://samantharubinchik.com/

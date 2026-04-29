@@ -2,7 +2,8 @@ Stefan Cruceru — Founder Brief
 ==============================
 
 Founder & CEO of Warp Laboratory Inc, building Droplet — the personal AI cloud.
-Working code, full-time founder. Privacy-first by architecture.
+Three-founder team. Hardware v0 prototype operational. Privacy-first by
+architecture.
 
 Last updated: 2026-04
 
@@ -12,11 +13,27 @@ Name:        Stefan Cruceru
 Role:        Founder & CEO
 Company:     Warp Laboratory Inc (alt: "Warp Lab")
 Based:       Costa Mesa, California, United States
-Status:      Full-time founder · Q2 2026
+Status:      Full-time founder · Q2 2026 close
 Email:       Stefan17x@gmail.com
 LinkedIn:    https://www.linkedin.com/in/stefan-cruceru
 Site:        https://stefancruceru.com/
 Reference:   https://stefancruceru.com/reference-michael-gonzalez.pdf
+
+Founding team (Warp Laboratory Inc)
+-----------------------------------
+Stefan Cruceru     · Founder & CEO
+                     stefancruceru.com
+                     https://www.linkedin.com/in/stefan-cruceru
+
+Romain Jouffret    · CPO & Software Lead
+                     Software engineer building intelligent, lightning-fast
+                     systems. Costa Mesa / Santa Monica, CA.
+                     romainjouffret.com
+                     https://www.linkedin.com/in/romainjouffret
+
+Samantha Rubinchik · CFO
+                     Operator who underwrites risk and ships.
+                     samantharubinchik.com
 
 Company
 -------
@@ -24,7 +41,8 @@ Name:        Warp Laboratory Inc
 Type:        Privacy-first edge AI hardware company
 Product:     Droplet — the personal AI cloud
 HQ:          Costa Mesa, California, United States
-Stage:       Working code · Solo build · Pre-seed
+Headcount:   3 (founding team)
+Stage:       Working code · Hardware v0 prototype operational · Pre-seed
 Close:       Q2 2026
 Open to:     Investors, design partners, advisors, operators with networks
              in consumer hardware, privacy-brand portfolios, smart-home
@@ -48,12 +66,13 @@ Pillars:
     operations are blocked for AI by design.
 
 Status:
- - Control plane:        Working
- - Identity / auth:      Working
- - On-device AI:         Working
- - Network isolation:    Working
- - Hardware v1:          In progress
- - Mobile + remote:      In progress
+ - Control plane:           Working
+ - Identity / auth:         Working
+ - On-device AI:            Working
+ - Network isolation:       Working
+ - Hardware v0 (prototype): Operational  <- fully working prototype
+ - Hardware v1 (production): In progress
+ - Mobile + remote:         In progress
  - Boots from a single command on a fresh device.
 
 Founder-Market Fit
@@ -67,36 +86,22 @@ Founder-Market Fit
    customers I have already delivered for.
 
 3. Working code, not slides. The integration is real. Boots from one
-   command on a fresh device. Built and assembled solo, with a clear
-   path from prototype to product.
+   command on a fresh device. Hardware v0 prototype is operational.
+   Tight three-person founding team with a clear path from prototype
+   to product.
 
 4. Founder-market fit is uncomfortably specific. Operator instinct +
    field engineering + control-plane software, in one person.
 
-Background (6+ years field engineering)
----------------------------------------
+Background (6+ years field engineering, Stefan)
+-----------------------------------------------
 2026  Senior Technical Systems Engineer · Clearcloud Internet Solutions
-      Architecture & delivery for industrial / government / critical-infra.
-      Stood up SOPs, workflows, tech stacks. Mentored engineers. Departed
-      via workforce reduction (project-volume slowdown), not performance.
-
 2025  Technical Systems Engineer · Clearcloud Internet Solutions
-      System design across security, low-V, and networked environments.
-
-2024  Field Engineer · Clearcloud Internet Solutions
-      Designed, installed, commissioned IT/CCTV/access control for SCE.
-
+2024  Field Engineer · Clearcloud Internet Solutions (SCE)
 2023  Lead Technician · Clearcloud Internet Solutions
-      Low-voltage deployments for SCE on Software House, Bosch, Cisco.
-
 2023  Low-Voltage Lead Technician · TechOne Solutions (Contract)
-      Server-room and enterprise low-voltage installs across multiple sites.
-
 2022  Fiber Install Technician · Frontier Internet (Contract)
-      Fiber-optic infrastructure across Orange County. OTDR, fault isolation.
-
 2019  PM & Sr. Installation Specialist · Secured Volts NY
-      CCTV and low-voltage projects including international rollouts.
 
 Domain Stack
 ------------
@@ -110,25 +115,10 @@ Sensor Aggregation:    Ladder Logic, Custom API, PLC
 
 Selected Operator Proof Points
 ------------------------------
-DWG-001 · Utility · NERC
-        Substation security modernization for Southern California Edison.
-        Integrated CCTV, access control, and network systems across
-        multiple substations. Standardized installs, full QA/QC, as-builts.
-
-DWG-002 · Government
-        UAS detection + radar perimeter for confidential DoD-adjacent
-        client. Architecture and integration for radar, UAS detection,
-        counter-drone aggregation. Custom API into VMS for unified SA.
-
-DWG-003 · Retail / Logistics
-        International CCTV rollout for premium retail and logistics
-        (via Secured Volts). Multi-country deployments. Built and led
-        technical teams.
-
-DWG-004 · Utility · Fiber
-        Fiber-optic plant expansion for Frontier Internet. Install,
-        splicing, commissioning across Orange County. OTDR, fault
-        isolation, restoration.
+DWG-001 · Substation security modernization · Southern California Edison
+DWG-002 · UAS detection + radar perimeter · DoD-adjacent (confidential)
+DWG-003 · International CCTV rollout · Premium retail / logistics
+DWG-004 · Fiber-optic plant expansion · Frontier Internet
 
 Credentials
 -----------
@@ -140,7 +130,7 @@ Reference
 components and focus on how systems actually perform in real-world
 conditions. He understood configuration discipline, system dependencies,
 and the operational impact of design decisions."
-  — Michael Gonzalez, CTO, Clear Cloud Solutions
+  -- Michael Gonzalez, CTO, Clear Cloud Solutions
   Full letter: https://stefancruceru.com/reference-michael-gonzalez.pdf
 
 Contact

@@ -32,7 +32,7 @@ const FOUNDER_REASONS = [
   {
     n: "03",
     t: "Working code, not slides.",
-    d: "The integration is real. Boots from one command on a fresh device. Built and assembled solo, with a clear path from prototype to product.",
+    d: "The integration is real. Boots from one command on a fresh device. Hardware v0 prototype is fully operational. Tight three-person founding team with a clear path from prototype to product.",
   },
   {
     n: "04",
@@ -41,13 +41,37 @@ const FOUNDER_REASONS = [
   },
 ];
 
+const FOUNDING_TEAM = [
+  {
+    name: "Stefan Cruceru",
+    role: "Founder & CEO",
+    blurb: "Operator + field engineering + control-plane software.",
+    site: { label: "stefancruceru.com", href: "https://stefancruceru.com/" },
+    linkedin: "https://www.linkedin.com/in/stefan-cruceru",
+  },
+  {
+    name: "Romain Jouffret",
+    role: "CPO & Software Lead",
+    blurb: "Software engineer building intelligent, lightning-fast systems.",
+    site: { label: "romainjouffret.com", href: "https://romainjouffret.com/" },
+    linkedin: "https://www.linkedin.com/in/romainjouffret",
+  },
+  {
+    name: "Samantha Rubinchik",
+    role: "CFO",
+    blurb: "Operator who underwrites risk and ships.",
+    site: { label: "samantharubinchik.com", href: "https://samantharubinchik.com/" },
+    linkedin: null,
+  },
+];
+
 const TIMELINE = [
   { period: "Now", current: true, role: "Founder & CEO", co: "Warp Laboratory Inc — Building Droplet",
-    tags: ["Founder", "Edge AI", "On-device", "Privacy-first", "Solo build"],
+    tags: ["Founder", "Edge AI", "On-device", "Privacy-first", "3-founder team"],
     bullets: [
       "Building Droplet — the personal AI cloud. One on-device appliance replacing fragmented consumer services.",
       "Full-time founder; working code from prototype to product. Privacy-first by architecture.",
-      "Solo build, integration done on-device. Q2 2026 close.",
+      "Three-founder team — Stefan (CEO) · Romain Jouffret (CPO & Software Lead) · Samantha Rubinchik (CFO). Hardware v0 prototype operational. Q2 2026 close.",
     ] },
   { period: "2026", role: "Senior Technical Systems Engineer", co: "Clearcloud Internet Solutions",
     tags: ["Architecture", "Industrial / gov", "SOPs", "QA/QC", "Mentoring"],
@@ -405,16 +429,40 @@ function About() {
         <span className="rule"/>
       </div>
       <dl className="founder-facts" data-anim aria-label="Founder fact sheet">
-        <div><dt>Founder</dt><dd>Stefan Cruceru · Founder &amp; CEO</dd></div>
         <div><dt>Company</dt><dd>Warp Laboratory Inc</dd></div>
         <div><dt>Product</dt><dd>Droplet — the personal AI cloud</dd></div>
-        <div><dt>Stage</dt><dd>Working code · Solo build</dd></div>
-        <div><dt>Status</dt><dd>Full-time founder · Q2 2026</dd></div>
+        <div><dt>Team</dt><dd>3 founders · Stefan, Romain, Samantha</dd></div>
+        <div><dt>Stage</dt><dd>Working code · Hardware v0 operational</dd></div>
+        <div><dt>Status</dt><dd>Full-time founders · Q2 2026 close</dd></div>
         <div><dt>Domain</dt><dd>Edge AI · Privacy-first hardware · On-device integration</dd></div>
         <div><dt>Background</dt><dd>6+ yrs field engineering · OT / IT</dd></div>
         <div><dt>Based</dt><dd>Costa Mesa, California, USA</dd></div>
         <div><dt>Open to</dt><dd>Investors · Design partners · Advisors · Operators</dd></div>
       </dl>
+
+      <div className="founding-team" data-anim>
+        <div className="ft-eye">
+          <span className="ft-lab">Founding Team · 03</span>
+          <span className="ft-rule"/>
+        </div>
+        <div className="ft-grid">
+          {FOUNDING_TEAM.map((p, i) => (
+            <article className="ft-card" key={i}>
+              <div className="ft-name">{p.name}</div>
+              <div className="ft-role">{p.role}</div>
+              <p className="ft-blurb">{p.blurb}</p>
+              <div className="ft-links">
+                {p.site && (
+                  <a href={p.site.href} target="_blank" rel="noopener noreferrer">{p.site.label} <span className="ft-arrow">↗</span></a>
+                )}
+                {p.linkedin && (
+                  <a href={p.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <span className="ft-arrow">↗</span></a>
+                )}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
       <p data-anim>
         I'm <strong>building <a href="#droplet" className="hero-inline">Droplet</a> full-time</strong> —
         a personal AI cloud that lives on a single on-device appliance. The thesis:
@@ -545,8 +593,9 @@ function Traction() {
       <p className="sec-lede" data-anim>
         The control plane is alive. A single command provisions a fresh device end-to-end —
         identity, network isolation, on-device AI, and the integrated control surface come
-        up together, with one auth boundary across the stack. Hardware finalisation and
-        beta is the next milestone. Detailed walkthrough on request.
+        up together, with one auth boundary across the stack. <strong>Hardware v0 prototype
+        is fully operational.</strong> Production hardware finalisation and beta is the
+        next milestone. Detailed walkthrough on request.
       </p>
 
       <div className="status-strip" data-anim>
@@ -554,7 +603,8 @@ function Traction() {
         <div className="ss"><span className="ss-dot live"/><span className="ss-k">Identity / auth</span><span className="ss-v">Working</span></div>
         <div className="ss"><span className="ss-dot live"/><span className="ss-k">On-device AI</span><span className="ss-v">Working</span></div>
         <div className="ss"><span className="ss-dot live"/><span className="ss-k">Network isolation</span><span className="ss-v">Working</span></div>
-        <div className="ss"><span className="ss-dot warn"/><span className="ss-k">Hardware v1</span><span className="ss-v">In progress</span></div>
+        <div className="ss"><span className="ss-dot live"/><span className="ss-k">Hardware v0 (prototype)</span><span className="ss-v">Operational</span></div>
+        <div className="ss"><span className="ss-dot warn"/><span className="ss-k">Hardware v1 (production)</span><span className="ss-v">In progress</span></div>
         <div className="ss"><span className="ss-dot warn"/><span className="ss-k">Mobile + remote</span><span className="ss-v">In progress</span></div>
       </div>
     </section>
