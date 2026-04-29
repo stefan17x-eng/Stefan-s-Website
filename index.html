@@ -109,6 +109,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- No-JS fallback. The site is prerendered, so all text is already in the
+       served HTML. These rules only matter if a reader has JS disabled: open
+       the Experience accordion and force any reveal-on-scroll blocks visible. -->
+  <noscript>
+    <style>
+      [data-anim] { opacity: 1 !important; transform: none !important; }
+      .xp-detail { grid-template-rows: 1fr !important; }
+      .xp-detail > div { overflow: visible !important; }
+      .xp-toggle { display: none !important; }
+    </style>
+  </noscript>
 </head>
 <body>
   <div id="root"></div>

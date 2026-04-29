@@ -682,9 +682,9 @@ function Projects() {
 function Contact() {
   const [copied, setCopied] = useState(-1);
   const items = [
-    { lab: "Email",    val: "Stefan17x@gmail.com",    href: "mailto:Stefan17x@gmail.com",    copy: "Stefan17x@gmail.com" },
-    { lab: "Phone",    val: "609 · 712 · 0920",       href: "tel:6097120920",                copy: "6097120920" },
-    { lab: "LinkedIn", val: "/in/stefan-cruceru",     href: "https://www.linkedin.com/in/stefan-cruceru" },
+    { lab: "Email",    val: "Stefan17x@gmail.com",    href: "mailto:Stefan17x@gmail.com",                 copy: "Stefan17x@gmail.com" },
+    { lab: "Phone",    val: "609 · 712 · 0920",       href: "tel:6097120920",                              copy: "6097120920" },
+    { lab: "LinkedIn", val: "/in/stefan-cruceru",     href: "https://www.linkedin.com/in/stefan-cruceru",  external: true },
     { lab: "Based",    val: "Costa Mesa, California", href: null },
   ];
   return (
@@ -702,27 +702,38 @@ function Contact() {
         to keep things running at 2 AM.
       </p>
       <div className="contact-list">
-        {items.map((c, i) => (
-          <div
-            key={i}
-            className={`cc ${copied === i ? "copied" : ""}`}
-            onClick={() => {
-              if (c.copy) {
-                navigator.clipboard?.writeText(c.copy);
-                setCopied(i);
-                setTimeout(() => setCopied(-1), 1400);
-              } else if (c.href) {
-                window.open(c.href, "_blank", "noopener");
-              }
-            }}
-          >
-            <span className="lab">{c.lab}</span>
-            <span className="val">{c.val}</span>
-            <span className="act">
-              {c.copy ? (copied === i ? "Copied" : "Copy") : c.href ? "Open ↗" : ""}
-            </span>
-          </div>
-        ))}
+        {items.map((c, i) => {
+          const cls = `cc ${copied === i ? "copied" : ""}`;
+          const action = c.copy ? (copied === i ? "Copied" : "Copy") : c.external ? "Open ↗" : "";
+          const inner = (
+            <>
+              <span className="lab">{c.lab}</span>
+              <span className="val">{c.val}</span>
+              <span className="act">{action}</span>
+            </>
+          );
+          if (!c.href) {
+            return <div key={i} className={cls}>{inner}</div>;
+          }
+          return (
+            <a
+              key={i}
+              href={c.href}
+              className={cls}
+              {...(c.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              onClick={(e) => {
+                if (c.copy && navigator.clipboard) {
+                  e.preventDefault();
+                  navigator.clipboard.writeText(c.copy);
+                  setCopied(i);
+                  setTimeout(() => setCopied(-1), 1400);
+                }
+              }}
+            >
+              {inner}
+            </a>
+          );
+        })}
       </div>
       <div className="foot">
         <span>© 2026 Stefan Cruceru</span>
