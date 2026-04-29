@@ -1261,16 +1261,26 @@ section:first-of-type { padding-top: 56px; padding-bottom: 56px; }
    ============================================================ */
 
 .reference-card {
-  margin-top: 28px;
-  /* Break out of the 920px .wrap container to span ~96vw on every viewport.
-     50% is half the parent's content width, 48vw is 48% of viewport — the
-     difference is the negative margin needed to escape the wrap. */
-  margin-left: calc(50% - 48vw);
-  margin-right: calc(50% - 48vw);
-  padding: 24px clamp(22px, 4vw, 44px) 22px;
-  border: 1px solid var(--rule);
-  border-radius: 10px;
+  margin-top: 36px;
+  /* Full-bleed: break out of the 920px .wrap to span the entire viewport. */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  padding: 32px clamp(20px, 5vw, 80px) 30px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
   background: var(--paper);
+  box-sizing: border-box;
+}
+/* Re-cap the inner content so it still reads at sane line-lengths on
+   ultrawide screens, even though the card itself is full-bleed. */
+.reference-card > * {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .reference-eyebrow {
   display: flex;
