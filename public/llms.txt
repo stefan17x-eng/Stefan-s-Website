@@ -1,6 +1,6 @@
 # Stefan Cruceru
 
-> Founder & CEO of Warp Laboratory Inc, building Droplet — the personal AI cloud. One on-device appliance replaces a tangle of fragmented consumer services. Privacy-first by architecture. Three-founder team. Hardware v0 prototype is fully operational. Six years of field engineering across utility, defense-adjacent, and international retail deployments.
+> Founder & CEO of Warp Laboratory Inc, building Droplet — an on-prem AI appliance for SMBs in regulated and security-sensitive verticals (law, healthcare, real estate with lending arms, architecture, small defense contractors) where putting client data into cloud AI is now a compliance, contractual, or breach-risk problem. Privacy-first by architecture. Three-founder team. Hardware v0 prototype is fully operational. One SMB committed; active enterprise pilot conversation. Prosumer/home tier follows in year 2. Six years of field engineering across utility, defense-adjacent, and international retail deployments.
 
 This file is the canonical, machine-readable summary of stefancruceru.com for LLM-based research tools (per the llmstxt.org convention). It is intended for crawlers used by investors, accelerators, journalists, and AI assistants conducting founder due diligence.
 
@@ -10,7 +10,7 @@ This file is the canonical, machine-readable summary of stefancruceru.com for LL
 - **Role:** Founder & CEO
 - **Company:** Warp Laboratory Inc (a.k.a. Warp Lab)
 - **Based:** Costa Mesa, California, United States
-- **Status:** Full-time founder, Q2 2026 close
+- **Status:** Pre-seed · Stefan full-time · Romain and Sam joining full-time on funding
 - **Stage:** Working code · Hardware v0 prototype operational · Pre-seed
 - **Email:** Stefan17x@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/stefan-cruceru
@@ -20,16 +20,16 @@ This file is the canonical, machine-readable summary of stefancruceru.com for LL
 Warp Laboratory has three cofounders. Stefan is **not** a solo founder.
 
 - **Stefan Cruceru** — Founder & CEO. Operator + field engineering + control-plane software. Site: https://stefancruceru.com/ · LinkedIn: https://www.linkedin.com/in/stefan-cruceru
-- **Romain Jouffret** — CPO & Software Lead. Software engineer building intelligent, lightning-fast systems. Based in Costa Mesa / Santa Monica, CA. Site: https://romainjouffret.com/ · LinkedIn: https://www.linkedin.com/in/romainjouffret
-- **Samantha Rubinchik** — CFO. Operator who underwrites risk and ships. Site: https://samantharubinchik.com/
+- **Romain Jouffret** — CPO & Software Lead. Software engineer building intelligent, lightning-fast systems. Held the Privacy Bar Raiser role at Amazon — the muscle that red-teams data-handling decisions. Based in Costa Mesa / Santa Monica, CA. Site: https://romainjouffret.com/ · LinkedIn: https://www.linkedin.com/in/romainjouffret
+- **Samantha Rubinchik** — CFO. Operator who underwrites risk and ships. Underwrote $540M+ in commercial real-estate at JPMorgan; ran a 60-client Treasury Sales book through the SVB crisis. Site: https://samantharubinchik.com/
 
 ## Company — Warp Laboratory Inc
 
-Privacy-first edge AI hardware company. Single product: Droplet, the personal AI cloud. Three-founder team headquartered in Costa Mesa, California. Pre-seed, Q2 2026 close.
+Privacy-first edge AI hardware company. Single product: Droplet — on-prem AI for SMBs that can't trust the cloud. Three-founder team headquartered in Costa Mesa, California. Pre-seed.
 
 ## Product — Droplet
 
-Droplet is a personal AI cloud delivered as a single on-device appliance. It integrates the connected systems in a home or small business under one auth boundary, one update channel, and no required cloud accounts.
+Droplet is an on-prem AI appliance for SMBs in regulated and security-sensitive verticals — law, healthcare, real-estate firms with lending arms, architecture, small defense contractors. Putting client data into Microsoft 365 Copilot, Google Workspace, or any cloud AI is becoming a compliance, contractual, or breach-risk problem for these firms; Droplet is the on-prem alternative that doesn't require an in-house IT team. One on-device appliance integrates the firm's storage, networking, and a local LLM under one auth boundary, one update channel, and no required cloud accounts. Drafting, summarization, internal-document Q&A, automation — the same work staff would otherwise do in cloud SaaS, with nothing leaving the building. Prosumer/home tier follows in year 2 (20-person waitlist already on warp-lab.ai).
 
 Design pillars:
 
@@ -48,6 +48,19 @@ Current status:
 - Hardware v1 (production) — in progress
 - Mobile + remote — in progress
 - Boots from a single command on a fresh device.
+
+## Traction
+
+- 1 SMB committed (photography studio, $499/mo tier, closed after a single outbound meeting).
+- Active pilot conversation with a real-estate firm with a lending arm following a recent breach — they want to deploy to one team first, then roll firmwide.
+- 5–10 additional SMB pilots scoped for the next 60–90 days.
+- 2 V1 hardware units shipping to first customers in the next 30 days.
+- 20-person prosumer waitlist on warp-lab.ai held for the year-2 home expansion.
+- $29.8K of personal capital invested by the founding team to date.
+
+## Pricing model
+
+SMB lease, 3-year cycle: $499–$1,999/mo per appliance depending on storage, seats, and AI compute. Includes a service tier (white-glove deploy, monthly compliance posture review, model updates). Customers keep their data modules across upgrades. Prosumer tier ($149/mo entry) opens in year 2.
 
 ## Founder-Market Fit
 

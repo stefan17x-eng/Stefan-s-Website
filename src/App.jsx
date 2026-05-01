@@ -52,14 +52,14 @@ const FOUNDING_TEAM = [
   {
     name: "Romain Jouffret",
     role: "CPO & Software Lead",
-    blurb: "Software engineer building intelligent, lightning-fast systems.",
+    blurb: "Software engineer building intelligent, lightning-fast systems. Held the Privacy Bar Raiser role at Amazon — the muscle that red-teams data-handling decisions.",
     site: { label: "romainjouffret.com", href: "https://romainjouffret.com/" },
     linkedin: "https://www.linkedin.com/in/romainjouffret",
   },
   {
     name: "Samantha Rubinchik",
     role: "CFO",
-    blurb: "Operator who underwrites risk and ships.",
+    blurb: "Operator who underwrites risk and ships. Underwrote $540M+ in commercial real-estate at JPMorgan; ran a 60-client Treasury Sales book through the SVB crisis.",
     site: { label: "samantharubinchik.com", href: "https://samantharubinchik.com/" },
     linkedin: null,
   },
@@ -69,9 +69,9 @@ const TIMELINE = [
   { period: "Now", current: true, role: "Founder & CEO", co: "Warp Laboratory Inc — Building Droplet",
     tags: ["Founder", "Edge AI", "On-device", "Privacy-first", "3-founder team"],
     bullets: [
-      "Building Droplet — the personal AI cloud. One on-device appliance replacing fragmented consumer services.",
+      "Building Droplet — an on-prem AI appliance for SMBs in regulated and security-sensitive verticals. Prosumer/home tier follows in year 2.",
       "Full-time founder; working code from prototype to product. Privacy-first by architecture.",
-      "Three-founder team — Stefan (CEO) · Romain Jouffret (CPO & Software Lead) · Samantha Rubinchik (CFO). Hardware v0 prototype operational. Q2 2026 close.",
+      "Three-founder team — Stefan (CEO) · Romain Jouffret (CPO & Software Lead) · Samantha Rubinchik (CFO). Hardware v0 prototype operational. Pre-seed.",
     ] },
   { period: "2026", role: "Senior Technical Systems Engineer", co: "Clearcloud Internet Solutions",
     tags: ["Architecture", "Industrial / gov", "SOPs", "QA/QC", "Mentoring"],
@@ -366,7 +366,7 @@ function Hero() {
       <HeroSchematic/>
       <div style={{display:"flex", flexWrap:"wrap", alignItems:"center", gap:"10px", marginBottom:"6px"}}>
         <span className="hero-status">
-          <span className="dot"/>FOUNDER · <b>FULL-TIME</b> · Q2 2026
+          <span className="dot"/>FOUNDER · <b>FULL-TIME</b> · PRE-SEED
         </span>
         <HeroLeds/>
       </div>
@@ -393,10 +393,11 @@ function Hero() {
         <span className="signal">Nothing leaves</span> the box.
       </h1>
       <p data-anim>
-        I'm building <b>Droplet</b> — a single on-device appliance that integrates the
-        connected systems in a home or small business under one auth boundary, one
-        update channel, and no required cloud accounts. Privacy-first by architecture.
-        Working code, full-time founder. Six years of field engineering behind it.
+        I'm building <b>Droplet</b> — an on-prem AI appliance for SMBs in regulated and
+        security-sensitive verticals (law, healthcare, real estate, architecture, small
+        defense) where putting client data into cloud AI is now a compliance, contractual,
+        or breach-risk problem. One box runs the firm's storage, networking, and a local
+        LLM, behind one auth boundary. Nothing leaves the building. Working code, full-time.
       </p>
       <div className="hero-actions" data-anim>
         <a href="#droplet" className="btn primary">See Droplet <span className="arrow">→</span></a>
@@ -433,7 +434,7 @@ function About() {
         <div><dt>Product</dt><dd>Droplet — the personal AI cloud</dd></div>
         <div><dt>Team</dt><dd>3 founders · Stefan, Romain, Samantha</dd></div>
         <div><dt>Stage</dt><dd>Working code · Hardware v0 operational</dd></div>
-        <div><dt>Status</dt><dd>Full-time founders · Q2 2026 close</dd></div>
+        <div><dt>Status</dt><dd>Pre-seed · Stefan full-time · Romain &amp; Sam joining on funding</dd></div>
         <div><dt>Domain</dt><dd>Edge AI · Privacy-first hardware · On-device integration</dd></div>
         <div><dt>Background</dt><dd>6+ yrs field engineering · OT / IT</dd></div>
         <div><dt>Based</dt><dd>Costa Mesa, California, USA</dd></div>
@@ -465,8 +466,9 @@ function About() {
       </div>
       <p data-anim>
         I'm <strong>building <a href="#droplet" className="hero-inline">Droplet</a> full-time</strong> —
-        a personal AI cloud that lives on a single on-device appliance. The thesis:
-        privacy-first by architecture, integrated by design, owned by the operator.
+        an on-prem AI appliance for SMBs in regulated and security-sensitive verticals.
+        The thesis: privacy-first by architecture, configured in plain English so a
+        25-person firm doesn't need to hire a sysadmin to run it.
       </p>
       <p data-anim>
         The expertise behind it is six years of field engineering in environments
@@ -508,19 +510,22 @@ function Droplet() {
     <section id="droplet" className="droplet-sec">
       <div className="eyebrow">
         <span className="id">§02</span>
-        <span className="label">Droplet · The Personal AI Cloud</span>
+        <span className="label">Droplet · On-prem AI for regulated SMBs</span>
         <span className="rule"/>
       </div>
 
       <h2 className="sec-h2" data-anim>
-        Building the <span className="signal">personal AI cloud.</span>
+        On-prem AI for the firms that <span className="signal">can't put client data in the cloud.</span>
       </h2>
 
       <p className="sec-lede" data-anim>
-        Households today rent a tangle of disjoint consumer services — none of which
-        integrate, all of which ship data off-premises. Droplet is a single
-        on-device appliance that replaces the tangle: integrated, private by
-        architecture, and owned by the operator. More on request.
+        Regulated and security-sensitive SMBs — law, healthcare, real-estate firms with
+        lending arms, architecture, small defense contractors — are being pushed off cloud
+        AI by clients, regulators, and underwriters. Droplet is a single on-device
+        appliance that runs storage, networking, and a local LLM behind one auth
+        boundary. Drafting, summarization, internal-document Q&amp;A, automation —
+        the same work staff would do in cloud SaaS, with nothing leaving the building.
+        Prosumer/home tier follows in year 2.
       </p>
 
       <div className="pillar-grid" data-anim>
@@ -596,6 +601,15 @@ function Traction() {
         up together, with one auth boundary across the stack. <strong>Hardware v0 prototype
         is fully operational.</strong> Production hardware finalisation and beta is the
         next milestone. Detailed walkthrough on request.
+      </p>
+
+      <p className="sec-lede" data-anim>
+        Customer signal so far: <strong>one SMB committed</strong> (photography studio,
+        $499/mo tier, after a single outbound meeting), an <strong>active pilot
+        conversation with a real-estate firm with a lending arm</strong> following a
+        recent breach, and <strong>5–10 additional SMB pilots</strong> scoped for the
+        next 60–90 days. Two V1 units shipping to first customers in the next 30 days.
+        A 20-person prosumer waitlist sits on warp-lab.ai for the year-2 home expansion.
       </p>
 
       <div className="status-strip" data-anim>

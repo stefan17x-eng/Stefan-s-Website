@@ -1,9 +1,10 @@
 Stefan Cruceru — Founder Brief
 ==============================
 
-Founder & CEO of Warp Laboratory Inc, building Droplet — the personal AI cloud.
-Three-founder team. Hardware v0 prototype operational. Privacy-first by
-architecture.
+Founder & CEO of Warp Laboratory Inc, building Droplet — an on-prem AI
+appliance for SMBs in regulated and security-sensitive verticals (law,
+healthcare, real estate, architecture, small defense). Three-founder team.
+Hardware v0 prototype operational. Privacy-first by architecture.
 
 Last updated: 2026-04
 
@@ -13,7 +14,7 @@ Name:        Stefan Cruceru
 Role:        Founder & CEO
 Company:     Warp Laboratory Inc (alt: "Warp Lab")
 Based:       Costa Mesa, California, United States
-Status:      Full-time founder · Q2 2026 close
+Status:      Pre-seed · Stefan full-time · Romain & Sam joining on funding
 Email:       Stefan17x@gmail.com
 LinkedIn:    https://www.linkedin.com/in/stefan-cruceru
 Site:        https://stefancruceru.com/
@@ -27,33 +28,42 @@ Stefan Cruceru     · Founder & CEO
 
 Romain Jouffret    · CPO & Software Lead
                      Software engineer building intelligent, lightning-fast
-                     systems. Costa Mesa / Santa Monica, CA.
+                     systems. Held the Privacy Bar Raiser role at Amazon —
+                     the muscle that red-teams data-handling decisions.
+                     Costa Mesa / Santa Monica, CA.
                      romainjouffret.com
                      https://www.linkedin.com/in/romainjouffret
 
 Samantha Rubinchik · CFO
-                     Operator who underwrites risk and ships.
+                     Operator who underwrites risk and ships. Underwrote
+                     $540M+ in commercial real-estate at JPMorgan; ran a
+                     60-client Treasury Sales book through the SVB crisis.
                      samantharubinchik.com
 
 Company
 -------
 Name:        Warp Laboratory Inc
 Type:        Privacy-first edge AI hardware company
-Product:     Droplet — the personal AI cloud
+Product:     Droplet — on-prem AI for SMBs that can't trust the cloud
 HQ:          Costa Mesa, California, United States
 Headcount:   3 (founding team)
 Stage:       Working code · Hardware v0 prototype operational · Pre-seed
-Close:       Q2 2026
 Open to:     Investors, design partners, advisors, operators with networks
-             in consumer hardware, privacy-brand portfolios, smart-home
-             installer channels, or the edge-AI thesis.
+             in regulated SMB verticals (law, healthcare, real estate,
+             architecture, defense contracting), MSP / IT-consultancy
+             channels, or the on-prem AI thesis.
 
 Product (Droplet)
 -----------------
-Category:    Edge AI Appliance · Personal AI Cloud
-Thesis:      One on-device appliance integrates the connected systems in a
-             home or small business under one auth boundary, one update
-             channel, and no required cloud accounts.
+Category:    On-prem AI appliance for regulated SMBs
+Thesis:      One on-device appliance runs the firm's storage, networking,
+             and a local LLM under one auth boundary, with nothing leaving
+             the building. Drafting, summarization, internal-document Q&A,
+             automation — the same work staff would do in cloud SaaS, on
+             a box that doesn't require an in-house IT team. Verticals:
+             law, healthcare, real-estate firms with lending arms,
+             architecture, small defense contractors. Prosumer/home tier
+             follows in year 2.
 
 Pillars:
  1. On-device by default. Nothing leaves the box unless the operator
@@ -74,6 +84,24 @@ Status:
  - Hardware v1 (production): In progress
  - Mobile + remote:         In progress
  - Boots from a single command on a fresh device.
+
+Traction
+--------
+ - 1 SMB committed (photography studio, $499/mo tier, closed after a
+   single outbound meeting).
+ - Active pilot conversation with a real-estate firm with a lending arm
+   following a recent breach.
+ - 5–10 additional SMB pilots scoped for the next 60–90 days.
+ - 2 V1 hardware units shipping to first customers in the next 30 days.
+ - 20-person prosumer waitlist on warp-lab.ai held for year-2 expansion.
+ - $29.8K of personal capital invested by the founding team to date.
+
+Pricing (lease, 3-year cycle)
+-----------------------------
+SMB:        $499–$1,999/mo per appliance, depending on storage, seats,
+            and AI compute. Includes service tier (white-glove deploy,
+            monthly compliance posture review, model updates).
+Prosumer:   $149/mo entry, opens in year 2.
 
 Founder-Market Fit
 ------------------
