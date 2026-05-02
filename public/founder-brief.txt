@@ -1,8 +1,8 @@
 Stefan Cruceru — Founder Brief
 ==============================
 
-Founder & CEO of Warp Laboratory Inc. Building Droplet — on-prem AI for
-regulated SMBs without IT staff.
+Founder & CEO of Warp Laboratory Inc. Building Droplet — on-prem AI that
+runs your IT.
 
 Last updated: 2026-05
 
@@ -12,7 +12,6 @@ Name:        Stefan Cruceru
 Role:        Founder & CEO
 Company:     Warp Laboratory Inc (alt: "Warp Lab")
 Based:       Costa Mesa, California, United States
-Status:      Full-time founder
 Email:       Stefan17x@gmail.com
 LinkedIn:    https://www.linkedin.com/in/stefan-cruceru
 Site:        https://stefancruceru.com/
@@ -22,22 +21,22 @@ Company
 -------
 Name:        Warp Laboratory Inc
 Type:        On-prem AI hardware company
-Product:     Droplet — on-prem AI for regulated SMBs
+Product:     Droplet — on-prem AI that runs IT for regulated SMBs
 HQ:          Costa Mesa, California, United States
 Stage:       Working code · Hardware v0 prototype operational
 
 Product (Droplet)
 -----------------
-Tagline:     On-prem AI for regulated SMBs without IT staff.
+Tagline:     On-prem AI that runs your IT.
 
 What it is:  One on-device appliance that plugs into the SMB network and
              replaces Dropbox, Microsoft 365 storage, Copilot, the router,
-             and the Wi-Fi. Internal data never leaves the building.
+             and the Wi-Fi — plus the IT labor that wires it all up.
+             Internal data never leaves the building.
 
-How it works: Acts as the company brain. AI runs locally on an NPU and
-              works as a unified agent across files, cameras, network,
-              smart devices, and access control. Single chat interface
-              tied to the team's existing identity.
+How it works: A unified AI agent runs locally on an NPU and manages files,
+              network, cameras, smart devices, and access control. Single
+              chat interface tied to the team's existing identity.
 
 Safety model: Three tiers.
               1. Reads run automatically.

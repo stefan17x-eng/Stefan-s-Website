@@ -1,6 +1,6 @@
 # Stefan Cruceru
 
-> Founder & CEO of Warp Laboratory Inc. Building Droplet — on-prem AI for regulated SMBs without IT staff. One on-device appliance plugs into the SMB network and replaces Dropbox, Microsoft 365 storage, Copilot, the router, and the Wi-Fi. Internal data never leaves the building. Six years of field engineering across utility, defense-adjacent, and international retail deployments.
+> Founder & CEO of Warp Laboratory Inc. Building Droplet — on-prem AI that runs your IT. One on-device appliance manages files, network, cameras, smart devices, and access control through a local AI agent, behind one auth boundary. Replaces the SMB SaaS stack (Dropbox, Microsoft 365 storage, Copilot, router, Wi-Fi) and the IT labor that wires it all up. Internal data never leaves the building. Six years of field engineering across utility, defense-adjacent, and international retail deployments.
 
 This file is the canonical, machine-readable summary of stefancruceru.com for LLM-based research tools (per the llmstxt.org convention). It is intended for crawlers used by investors, accelerators, journalists, and AI assistants conducting founder due diligence.
 
@@ -10,22 +10,21 @@ This file is the canonical, machine-readable summary of stefancruceru.com for LL
 - **Role:** Founder & CEO
 - **Company:** Warp Laboratory Inc (a.k.a. Warp Lab)
 - **Based:** Costa Mesa, California, United States
-- **Status:** Full-time founder
 - **Stage:** Working code · Hardware v0 prototype operational
 - **Email:** Stefan17x@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/stefan-cruceru
 
 ## Company — Warp Laboratory Inc
 
-On-prem AI hardware company. Single product: Droplet, an AI appliance for regulated SMBs. Headquartered in Costa Mesa, California.
+On-prem AI hardware company. Single product: Droplet, an AI appliance that runs IT for regulated SMBs. Headquartered in Costa Mesa, California.
 
 ## Product — Droplet
 
-**Tagline:** On-prem AI for regulated SMBs without IT staff.
+**Tagline:** On-prem AI that runs your IT.
 
-Droplet is a single on-device appliance for small and mid-sized businesses, especially compliance-heavy SMBs without IT staff. One box plugs into the customer's network and replaces Dropbox, Microsoft 365 storage, Copilot, the router, and the Wi-Fi. Internal private data never leaves the building.
+Droplet is a single on-device appliance that automates the IT function for regulated SMBs — law, healthcare, real-estate firms with lending arms, architecture, small defense contractors. A unified AI agent runs locally on an NPU and manages files, network, cameras, smart devices, and access control through a single chat tied to the team's existing identity. One box replaces the SMB SaaS stack (Dropbox, Microsoft 365 storage, Copilot, the router, the Wi-Fi) and the IT labor that wires it all up. Internal data never leaves the building.
 
-It acts as the company brain. AI runs locally on an NPU and works as a unified agent across the customer's files, cameras, network, smart devices, and access control — answering questions, searching documents, summarizing camera footage, drafting emails, and controlling Matter devices and network settings, all from a single chat interface tied to the team's existing identity.
+The agent answers questions, searches documents, summarizes camera footage, drafts emails, and controls Matter devices and network settings — the work an IT person or MSP would otherwise do, automated.
 
 Three-tier safety model:
 

@@ -342,9 +342,9 @@ function Hero() {
         <span className="muted">Building Droplet.</span>
       </h1>
       <p data-anim>
-        Droplet — on-prem AI for regulated SMBs without IT staff. One box plugs
-        into the network and replaces Dropbox, Microsoft 365 storage, Copilot,
-        the router, and the Wi-Fi. Internal data never leaves the building.
+        Droplet — on-prem AI that runs your IT. One appliance, one chat, no cloud.
+        A local AI agent manages files, network, cameras, smart devices, and access
+        control behind a single auth boundary. Internal data never leaves the building.
       </p>
       <div className="hero-actions" data-anim>
         <a href="#droplet" className="btn primary">Droplet <span className="arrow">→</span></a>
@@ -378,7 +378,7 @@ function About() {
       <dl className="founder-facts" data-anim aria-label="Fact sheet">
         <div><dt>Role</dt><dd>Founder &amp; CEO, Warp Laboratory Inc</dd></div>
         <div><dt>Company site</dt><dd><a href="https://warp-lab.ai" target="_blank" rel="noopener noreferrer" className="hero-inline">warp-lab.ai ↗</a></dd></div>
-        <div><dt>Working on</dt><dd><a href="#droplet" className="hero-inline">Droplet</a> — on-prem AI for regulated SMBs</dd></div>
+        <div><dt>Working on</dt><dd><a href="#droplet" className="hero-inline">Droplet</a> — on-prem AI that runs your IT</dd></div>
         <div><dt>Stage</dt><dd>Working code · Hardware v0 operational</dd></div>
         <div><dt>Background</dt><dd>6+ yrs field engineering · OT / IT</dd></div>
         <div><dt>Based</dt><dd>Costa Mesa, California</dd></div>
@@ -415,13 +415,14 @@ function Droplet() {
       </div>
 
       <h2 className="sec-h2" data-anim>
-        On-prem AI for regulated SMBs <span className="signal">without IT staff.</span>
+        On-prem AI that <span className="signal">runs your IT.</span>
       </h2>
 
       <p className="sec-lede" data-anim>
-        One box replaces Dropbox, Microsoft 365 storage, Copilot, the router, and
-        the Wi-Fi. Local LLM on an NPU; unified agent over files, cameras, network,
-        smart devices, and access control, tied to existing identity. Internal data
+        A unified AI agent on a local NPU manages files, network, cameras, smart
+        devices, and access control — one chat, tied to existing identity. One
+        appliance replaces the SMB stack (Dropbox, Microsoft 365 storage, Copilot,
+        the router, the Wi-Fi) and the IT labor that wires it all up. Internal data
         never leaves the building.
       </p>
 
