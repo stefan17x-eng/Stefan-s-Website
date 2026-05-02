@@ -316,7 +316,7 @@ function Hero() {
       <HeroSchematic/>
       <div style={{display:"flex", flexWrap:"wrap", alignItems:"center", gap:"10px", marginBottom:"6px"}}>
         <span className="hero-status">
-          <span className="dot"/>FOUNDER · <b>FULL-TIME</b> · Q2 2026
+          <span className="dot"/>FOUNDER · Q2 2026
         </span>
         <HeroLeds/>
       </div>
@@ -339,7 +339,7 @@ function Hero() {
       </div>
       <h1 data-anim>
         Founder &amp; CEO at <span className="signal">Warp Laboratory Inc.</span><br/>
-        <span className="muted">Building Droplet full-time.</span>
+        <span className="muted">Building Droplet.</span>
       </h1>
       <p data-anim>
         Droplet — on-prem AI for regulated SMBs without IT staff. One box plugs
@@ -352,8 +352,7 @@ function Hero() {
         <a href="#contact" className="btn">Get in touch</a>
       </div>
       <div className="hero-meta" data-anim>
-        <div className="item"><span className="k">Status</span><span className="v">Full-time founder</span></div>
-        <div className="item"><span className="k">Stage</span><span className="v">Working code</span></div>
+        <div className="item"><span className="k">Stage</span><span className="v">Working code · HW v0 op.</span></div>
         <div className="item"><span className="k">Based</span><span className="v">Costa Mesa, CA</span></div>
         <div className="item"><span className="k">Background</span><span className="v">6+ yrs field eng.</span></div>
       </div>
@@ -381,7 +380,6 @@ function About() {
         <div><dt>Company site</dt><dd><a href="https://warp-lab.ai" target="_blank" rel="noopener noreferrer" className="hero-inline">warp-lab.ai ↗</a></dd></div>
         <div><dt>Working on</dt><dd><a href="#droplet" className="hero-inline">Droplet</a> — on-prem AI for regulated SMBs</dd></div>
         <div><dt>Stage</dt><dd>Working code · Hardware v0 operational</dd></div>
-        <div><dt>Status</dt><dd>Full-time founder</dd></div>
         <div><dt>Background</dt><dd>6+ yrs field engineering · OT / IT</dd></div>
         <div><dt>Based</dt><dd>Costa Mesa, California</dd></div>
       </dl>
@@ -421,20 +419,15 @@ function Droplet() {
       </h2>
 
       <p className="sec-lede" data-anim>
-        One box plugs into the network and replaces Dropbox, Microsoft 365 storage,
-        Copilot, the router, and the Wi-Fi. Internal data never leaves the building.
+        One box replaces Dropbox, Microsoft 365 storage, Copilot, the router, and
+        the Wi-Fi. Local LLM on an NPU; unified agent over files, cameras, network,
+        smart devices, and access control, tied to existing identity. Internal data
+        never leaves the building.
       </p>
 
       <p className="sec-lede" data-anim>
-        Acts as the company brain. AI runs locally on an NPU and works as a unified
-        agent across files, cameras, network, smart devices, and access control —
-        single chat interface tied to the team's existing identity.
-      </p>
-
-      <p className="sec-lede" data-anim>
-        Three-tier safety: reads run automatically; writes (PoE toggles, SSID changes,
-        camera management) require user confirmation; destructive operations (reboot,
-        factory reset, severing the management connection) are blocked by design.
+        Three-tier safety: reads auto · writes (PoE, SSID, camera) confirmed ·
+        destructive ops (reboot, factory reset, sever management) blocked by design.
       </p>
 
       <div className="status-strip" data-anim>
