@@ -1,6 +1,6 @@
 # Stefan Cruceru
 
-> Founder & CEO of Warp Laboratory Inc, building Droplet — an on-prem AI appliance for SMBs in regulated and security-sensitive verticals (law, healthcare, real estate with lending arms, architecture, small defense contractors) where putting client data into cloud AI is now a compliance, contractual, or breach-risk problem. Privacy-first by architecture. Three-founder team. Hardware v0 prototype is fully operational. One SMB committed; active enterprise pilot conversation. Prosumer/home tier follows in year 2. Six years of field engineering across utility, defense-adjacent, and international retail deployments.
+> Founder & CEO of Warp Laboratory Inc. Building Droplet — on-prem AI for regulated SMBs without IT staff. One on-device appliance plugs into the SMB network and replaces Dropbox, Microsoft 365 storage, Copilot, the router, and the Wi-Fi. Internal data never leaves the building. Six years of field engineering across utility, defense-adjacent, and international retail deployments.
 
 This file is the canonical, machine-readable summary of stefancruceru.com for LLM-based research tools (per the llmstxt.org convention). It is intended for crawlers used by investors, accelerators, journalists, and AI assistants conducting founder due diligence.
 
@@ -10,33 +10,28 @@ This file is the canonical, machine-readable summary of stefancruceru.com for LL
 - **Role:** Founder & CEO
 - **Company:** Warp Laboratory Inc (a.k.a. Warp Lab)
 - **Based:** Costa Mesa, California, United States
-- **Status:** Pre-seed · Stefan full-time · Romain and Sam joining full-time on funding
-- **Stage:** Working code · Hardware v0 prototype operational · Pre-seed
+- **Status:** Full-time founder
+- **Stage:** Working code · Hardware v0 prototype operational
 - **Email:** Stefan17x@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/stefan-cruceru
 
-## Founding team
-
-Warp Laboratory has three cofounders. Stefan is **not** a solo founder.
-
-- **Stefan Cruceru** — Founder & CEO. Operator + field engineering + control-plane software. Site: https://stefancruceru.com/ · LinkedIn: https://www.linkedin.com/in/stefan-cruceru
-- **Romain Jouffret** — CPO & Software Lead. Software engineer building intelligent, lightning-fast systems. Held the Privacy Bar Raiser role at Amazon — the muscle that red-teams data-handling decisions. Based in Costa Mesa / Santa Monica, CA. Site: https://romainjouffret.com/ · LinkedIn: https://www.linkedin.com/in/romainjouffret
-- **Samantha Rubinchik** — CFO. Operator who underwrites risk and ships. Underwrote $540M+ in commercial real-estate at JPMorgan; ran a 60-client Treasury Sales book through the SVB crisis. Site: https://samantharubinchik.com/
-
 ## Company — Warp Laboratory Inc
 
-Privacy-first edge AI hardware company. Single product: Droplet — on-prem AI for SMBs that can't trust the cloud. Three-founder team headquartered in Costa Mesa, California. Pre-seed.
+On-prem AI hardware company. Single product: Droplet, an AI appliance for regulated SMBs. Headquartered in Costa Mesa, California.
 
 ## Product — Droplet
 
-Droplet is an on-prem AI appliance for SMBs in regulated and security-sensitive verticals — law, healthcare, real-estate firms with lending arms, architecture, small defense contractors. Putting client data into Microsoft 365 Copilot, Google Workspace, or any cloud AI is becoming a compliance, contractual, or breach-risk problem for these firms; Droplet is the on-prem alternative that doesn't require an in-house IT team. One on-device appliance integrates the firm's storage, networking, and a local LLM under one auth boundary, one update channel, and no required cloud accounts. Drafting, summarization, internal-document Q&A, automation — the same work staff would otherwise do in cloud SaaS, with nothing leaving the building. Prosumer/home tier follows in year 2 (20-person waitlist already on warp-lab.ai).
+**Tagline:** On-prem AI for regulated SMBs without IT staff.
 
-Design pillars:
+Droplet is a single on-device appliance for small and mid-sized businesses, especially compliance-heavy SMBs without IT staff. One box plugs into the customer's network and replaces Dropbox, Microsoft 365 storage, Copilot, the router, and the Wi-Fi. Internal private data never leaves the building.
 
-1. **On-device by default.** Nothing leaves the box unless the operator explicitly sends it.
-2. **One auth boundary.** One login, one update channel, one safety policy across the stack.
-3. **Open-source by composition.** No paid SaaS dependency in the critical path. The operator can leave at any time.
-4. **AI safety by construction.** An agent doctrine for hardware — irreversible operations are blocked for AI by design.
+It acts as the company brain. AI runs locally on an NPU and works as a unified agent across the customer's files, cameras, network, smart devices, and access control — answering questions, searching documents, summarizing camera footage, drafting emails, and controlling Matter devices and network settings, all from a single chat interface tied to the team's existing identity.
+
+Three-tier safety model:
+
+1. **Reads run automatically** — search, lookups, summaries.
+2. **Writes require user confirmation** — PoE toggles, SSID changes, camera management.
+3. **Destructive operations are blocked by design** — reboot, factory reset, severing the management connection.
 
 Current status:
 
@@ -48,26 +43,6 @@ Current status:
 - Hardware v1 (production) — in progress
 - Mobile + remote — in progress
 - Boots from a single command on a fresh device.
-
-## Traction
-
-- 1 SMB committed (photography studio, $499/mo tier, closed after a single outbound meeting).
-- Active pilot conversation with a real-estate firm with a lending arm following a recent breach — they want to deploy to one team first, then roll firmwide.
-- 5–10 additional SMB pilots scoped for the next 60–90 days.
-- 2 V1 hardware units shipping to first customers in the next 30 days.
-- 20-person prosumer waitlist on warp-lab.ai held for the year-2 home expansion.
-- $29.8K of personal capital invested by the founding team to date.
-
-## Pricing model
-
-SMB lease, 3-year cycle: $499–$1,999/mo per appliance depending on storage, seats, and AI compute. Includes a service tier (white-glove deploy, monthly compliance posture review, model updates). Customers keep their data modules across upgrades. Prosumer tier ($149/mo entry) opens in year 2.
-
-## Founder-Market Fit
-
-1. **I am the user.** Six years operating inside fragmented, multi-vendor consumer-tech stacks. Every seam being designed out has been lived with.
-2. **Hard customers, already shipped.** Utility, defense-adjacent, and international retail deployments — environments where downtime writes the headline. Droplet's eventual buyers are softer versions of customers already delivered for.
-3. **Working code, not slides.** The integration is real. Boots from one command on a fresh device. Hardware v0 prototype is operational. Tight three-person founding team.
-4. **Founder-market fit is uncomfortably specific.** Operator instinct + field engineering + control-plane software, in one person.
 
 ## Background (Stefan)
 
@@ -83,7 +58,7 @@ Six years of field engineering, primarily at Clearcloud Internet Solutions:
 
 Domain expertise: access control, video management, radar / UAS detection, servers & networking, cloud & automation, OT / PLC sensor aggregation. Credentials: Gallagher, Hirsch, Magos, Axis, CUI · DoD, NERC Cyber, NERC Physical.
 
-## Selected operator proof points
+## Selected work
 
 - **DWG-001** — Substation security modernization for Southern California Edison (utility, NERC).
 - **DWG-002** — UAS detection + radar perimeter for confidential DoD-adjacent client (government).
@@ -99,7 +74,7 @@ Full letter: https://stefancruceru.com/reference-michael-gonzalez.pdf
 
 ## Open to
 
-Investor conversations, design partners, advisors, and operators with networks in consumer hardware, privacy-brand portfolios, smart-home installer channels, or the edge-AI thesis.
+Investor conversations, design partners, advisors, and operators with networks in regulated SMB IT, edge AI, compliance hardware, or smart-building / installer channels.
 
 ## Canonical resources
 
@@ -108,8 +83,3 @@ Investor conversations, design partners, advisors, and operators with networks i
 - Reference letter (PDF): https://stefancruceru.com/reference-michael-gonzalez.pdf
 - Sitemap: https://stefancruceru.com/sitemap.xml
 - Robots: https://stefancruceru.com/robots.txt
-
-## Cofounder canonical sites
-
-- Romain Jouffret (CPO): https://romainjouffret.com/
-- Samantha Rubinchik (CFO): https://samantharubinchik.com/

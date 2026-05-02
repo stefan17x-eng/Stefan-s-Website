@@ -1,12 +1,10 @@
 Stefan Cruceru — Founder Brief
 ==============================
 
-Founder & CEO of Warp Laboratory Inc, building Droplet — an on-prem AI
-appliance for SMBs in regulated and security-sensitive verticals (law,
-healthcare, real estate, architecture, small defense). Three-founder team.
-Hardware v0 prototype operational. Privacy-first by architecture.
+Founder & CEO of Warp Laboratory Inc. Building Droplet — on-prem AI for
+regulated SMBs without IT staff.
 
-Last updated: 2026-04
+Last updated: 2026-05
 
 Founder
 -------
@@ -14,112 +12,49 @@ Name:        Stefan Cruceru
 Role:        Founder & CEO
 Company:     Warp Laboratory Inc (alt: "Warp Lab")
 Based:       Costa Mesa, California, United States
-Status:      Pre-seed · Stefan full-time · Romain & Sam joining on funding
+Status:      Full-time founder
 Email:       Stefan17x@gmail.com
 LinkedIn:    https://www.linkedin.com/in/stefan-cruceru
 Site:        https://stefancruceru.com/
 Reference:   https://stefancruceru.com/reference-michael-gonzalez.pdf
 
-Founding team (Warp Laboratory Inc)
------------------------------------
-Stefan Cruceru     · Founder & CEO
-                     stefancruceru.com
-                     https://www.linkedin.com/in/stefan-cruceru
-
-Romain Jouffret    · CPO & Software Lead
-                     Software engineer building intelligent, lightning-fast
-                     systems. Held the Privacy Bar Raiser role at Amazon —
-                     the muscle that red-teams data-handling decisions.
-                     Costa Mesa / Santa Monica, CA.
-                     romainjouffret.com
-                     https://www.linkedin.com/in/romainjouffret
-
-Samantha Rubinchik · CFO
-                     Operator who underwrites risk and ships. Underwrote
-                     $540M+ in commercial real-estate at JPMorgan; ran a
-                     60-client Treasury Sales book through the SVB crisis.
-                     samantharubinchik.com
-
 Company
 -------
 Name:        Warp Laboratory Inc
-Type:        Privacy-first edge AI hardware company
-Product:     Droplet — on-prem AI for SMBs that can't trust the cloud
+Type:        On-prem AI hardware company
+Product:     Droplet — on-prem AI for regulated SMBs
 HQ:          Costa Mesa, California, United States
-Headcount:   3 (founding team)
-Stage:       Working code · Hardware v0 prototype operational · Pre-seed
-Open to:     Investors, design partners, advisors, operators with networks
-             in regulated SMB verticals (law, healthcare, real estate,
-             architecture, defense contracting), MSP / IT-consultancy
-             channels, or the on-prem AI thesis.
+Stage:       Working code · Hardware v0 prototype operational
 
 Product (Droplet)
 -----------------
-Category:    On-prem AI appliance for regulated SMBs
-Thesis:      One on-device appliance runs the firm's storage, networking,
-             and a local LLM under one auth boundary, with nothing leaving
-             the building. Drafting, summarization, internal-document Q&A,
-             automation — the same work staff would do in cloud SaaS, on
-             a box that doesn't require an in-house IT team. Verticals:
-             law, healthcare, real-estate firms with lending arms,
-             architecture, small defense contractors. Prosumer/home tier
-             follows in year 2.
+Tagline:     On-prem AI for regulated SMBs without IT staff.
 
-Pillars:
- 1. On-device by default. Nothing leaves the box unless the operator
-    explicitly sends it.
- 2. One auth boundary. One login, one update channel, one safety policy
-    across the whole stack.
- 3. Open-source by composition. No paid SaaS dependency in the critical
-    path. The operator can leave at any time.
- 4. AI safety by construction. An agent doctrine for hardware — irreversible
-    operations are blocked for AI by design.
+What it is:  One on-device appliance that plugs into the SMB network and
+             replaces Dropbox, Microsoft 365 storage, Copilot, the router,
+             and the Wi-Fi. Internal data never leaves the building.
+
+How it works: Acts as the company brain. AI runs locally on an NPU and
+              works as a unified agent across files, cameras, network,
+              smart devices, and access control. Single chat interface
+              tied to the team's existing identity.
+
+Safety model: Three tiers.
+              1. Reads run automatically.
+              2. Writes (PoE toggles, SSID changes, camera management)
+                 require user confirmation.
+              3. Destructive operations (reboot, factory reset, severing
+                 the management connection) are blocked by design.
 
 Status:
  - Control plane:           Working
  - Identity / auth:         Working
  - On-device AI:            Working
  - Network isolation:       Working
- - Hardware v0 (prototype): Operational  <- fully working prototype
+ - Hardware v0 (prototype): Operational
  - Hardware v1 (production): In progress
  - Mobile + remote:         In progress
  - Boots from a single command on a fresh device.
-
-Traction
---------
- - 1 SMB committed (photography studio, $499/mo tier, closed after a
-   single outbound meeting).
- - Active pilot conversation with a real-estate firm with a lending arm
-   following a recent breach.
- - 5–10 additional SMB pilots scoped for the next 60–90 days.
- - 2 V1 hardware units shipping to first customers in the next 30 days.
- - 20-person prosumer waitlist on warp-lab.ai held for year-2 expansion.
- - $29.8K of personal capital invested by the founding team to date.
-
-Pricing (lease, 3-year cycle)
------------------------------
-SMB:        $499–$1,999/mo per appliance, depending on storage, seats,
-            and AI compute. Includes service tier (white-glove deploy,
-            monthly compliance posture review, model updates).
-Prosumer:   $149/mo entry, opens in year 2.
-
-Founder-Market Fit
-------------------
-1. I am the user. Six years operating inside fragmented, multi-vendor
-   consumer-tech stacks. Every seam I am designing out, I have lived with.
-
-2. Hard customers, already shipped. Utility, defense-adjacent, and
-   international retail deployments — environments where downtime writes
-   the headline. Droplet's eventual buyers are softer versions of
-   customers I have already delivered for.
-
-3. Working code, not slides. The integration is real. Boots from one
-   command on a fresh device. Hardware v0 prototype is operational.
-   Tight three-person founding team with a clear path from prototype
-   to product.
-
-4. Founder-market fit is uncomfortably specific. Operator instinct +
-   field engineering + control-plane software, in one person.
 
 Background (6+ years field engineering, Stefan)
 -----------------------------------------------
@@ -141,8 +76,8 @@ Servers & Networking:  Cisco, Dell, Linux, Windows Server, Microsoft 365
 Cloud & Automation:    Azure, AWS, GCP, PowerShell, Python, Docker
 Sensor Aggregation:    Ladder Logic, Custom API, PLC
 
-Selected Operator Proof Points
-------------------------------
+Selected Work
+-------------
 DWG-001 · Substation security modernization · Southern California Edison
 DWG-002 · UAS detection + radar perimeter · DoD-adjacent (confidential)
 DWG-003 · International CCTV rollout · Premium retail / logistics

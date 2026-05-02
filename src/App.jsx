@@ -11,67 +11,17 @@ const { useState, useEffect } = React;
 const NAV = [
   { id: "about",        label: "About",      sec: "01" },
   { id: "droplet",      label: "Droplet",    sec: "02" },
-  { id: "founder",      label: "Why",        sec: "03" },
-  { id: "traction",     label: "Status",     sec: "04" },
-  { id: "experience",   label: "Background", sec: "05" },
-  { id: "capabilities", label: "Stack",      sec: "06" },
-  { id: "projects",     label: "Operator",   sec: "07" },
-];
-
-const FOUNDER_REASONS = [
-  {
-    n: "01",
-    t: "I am the user.",
-    d: "Six years operating inside fragmented, multi-vendor consumer-tech stacks. Every seam I'm designing out, I have lived with.",
-  },
-  {
-    n: "02",
-    t: "Hard customers, already shipped.",
-    d: "Utility, defense-adjacent, and international retail deployments — environments where downtime writes the headline. Droplet's eventual buyers are softer versions of customers I have already delivered for.",
-  },
-  {
-    n: "03",
-    t: "Working code, not slides.",
-    d: "The integration is real. Boots from one command on a fresh device. Hardware v0 prototype is fully operational. Tight three-person founding team with a clear path from prototype to product.",
-  },
-  {
-    n: "04",
-    t: "Founder-market fit is uncomfortably specific.",
-    d: "Operator instinct + field engineering + control-plane software, in one person. A narrow intersection that does not show up on a resume scan but matters every week of execution.",
-  },
-];
-
-const FOUNDING_TEAM = [
-  {
-    name: "Stefan Cruceru",
-    role: "Founder & CEO",
-    blurb: "Operator + field engineering + control-plane software.",
-    site: { label: "stefancruceru.com", href: "https://stefancruceru.com/" },
-    linkedin: "https://www.linkedin.com/in/stefan-cruceru",
-  },
-  {
-    name: "Romain Jouffret",
-    role: "CPO & Software Lead",
-    blurb: "Software engineer building intelligent, lightning-fast systems. Held the Privacy Bar Raiser role at Amazon — the muscle that red-teams data-handling decisions.",
-    site: { label: "romainjouffret.com", href: "https://romainjouffret.com/" },
-    linkedin: "https://www.linkedin.com/in/romainjouffret",
-  },
-  {
-    name: "Samantha Rubinchik",
-    role: "CFO",
-    blurb: "Operator who underwrites risk and ships. Underwrote $540M+ in commercial real-estate at JPMorgan; ran a 60-client Treasury Sales book through the SVB crisis.",
-    site: { label: "samantharubinchik.com", href: "https://samantharubinchik.com/" },
-    linkedin: null,
-  },
+  { id: "experience",   label: "Background", sec: "03" },
+  { id: "capabilities", label: "Stack",      sec: "04" },
+  { id: "projects",     label: "Work",       sec: "05" },
 ];
 
 const TIMELINE = [
   { period: "Now", current: true, role: "Founder & CEO", co: "Warp Laboratory Inc — Building Droplet",
-    tags: ["Founder", "Edge AI", "On-device", "Privacy-first", "3-founder team"],
+    tags: ["Founder", "Edge AI", "On-device", "Hardware"],
     bullets: [
-      "Building Droplet — an on-prem AI appliance for SMBs in regulated and security-sensitive verticals. Prosumer/home tier follows in year 2.",
-      "Full-time founder; working code from prototype to product. Privacy-first by architecture.",
-      "Three-founder team — Stefan (CEO) · Romain Jouffret (CPO & Software Lead) · Samantha Rubinchik (CFO). Hardware v0 prototype operational. Pre-seed.",
+      "Building Droplet — a personal AI appliance that runs on-device. One auth boundary, one update channel, no required cloud accounts.",
+      "Full-time founder. Working code, hardware v0 prototype operational, v1 in progress.",
     ] },
   { period: "2026", role: "Senior Technical Systems Engineer", co: "Clearcloud Internet Solutions",
     tags: ["Architecture", "Industrial / gov", "SOPs", "QA/QC", "Mentoring"],
@@ -366,7 +316,7 @@ function Hero() {
       <HeroSchematic/>
       <div style={{display:"flex", flexWrap:"wrap", alignItems:"center", gap:"10px", marginBottom:"6px"}}>
         <span className="hero-status">
-          <span className="dot"/>FOUNDER · <b>FULL-TIME</b> · PRE-SEED
+          <span className="dot"/>FOUNDER · <b>FULL-TIME</b> · Q2 2026
         </span>
         <HeroLeds/>
       </div>
@@ -378,7 +328,7 @@ function Hero() {
           <span className="hn-line">Cruceru</span>
         </div>
         <div className="np-rule"/>
-        <div className="np-role">Founder &amp; CEO &nbsp;·&nbsp; <b>Warp Laboratory Inc</b> &nbsp;—&nbsp; Building Droplet, The Personal AI Cloud</div>
+        <div className="np-role">Founder &amp; CEO &nbsp;·&nbsp; <a href="https://warp-lab.ai" target="_blank" rel="noopener noreferrer" style={{color:'inherit'}}><b>Warp Laboratory Inc</b></a></div>
       </div>
 
       <div className="hero-badges">
@@ -388,20 +338,17 @@ function Hero() {
         <span className="hero-badge">UL-listed installs</span>
       </div>
       <h1 data-anim>
-        One appliance.<br/>
-        <span className="muted">Six clouds replaced.</span><br/>
-        <span className="signal">Nothing leaves</span> the box.
+        Founder &amp; CEO at <span className="signal">Warp Laboratory Inc.</span><br/>
+        <span className="muted">Building Droplet full-time.</span>
       </h1>
       <p data-anim>
-        I'm building <b>Droplet</b> — an on-prem AI appliance for SMBs in regulated and
-        security-sensitive verticals (law, healthcare, real estate, architecture, small
-        defense) where putting client data into cloud AI is now a compliance, contractual,
-        or breach-risk problem. One box runs the firm's storage, networking, and a local
-        LLM, behind one auth boundary. Nothing leaves the building. Working code, full-time.
+        Droplet — on-prem AI for regulated SMBs without IT staff. One box plugs
+        into the network and replaces Dropbox, Microsoft 365 storage, Copilot,
+        the router, and the Wi-Fi. Internal data never leaves the building.
       </p>
       <div className="hero-actions" data-anim>
-        <a href="#droplet" className="btn primary">See Droplet <span className="arrow">→</span></a>
-        <a href="#founder" className="btn">Why this founder</a>
+        <a href="#droplet" className="btn primary">Droplet <span className="arrow">→</span></a>
+        <a href="#experience" className="btn">Background</a>
         <a href="#contact" className="btn">Get in touch</a>
       </div>
       <div className="hero-meta" data-anim>
@@ -426,63 +373,18 @@ function About() {
     <section id="about" className="about">
       <div className="eyebrow">
         <span className="id">§01</span>
-        <span className="label">About · Founder Brief</span>
+        <span className="label">About</span>
         <span className="rule"/>
       </div>
-      <dl className="founder-facts" data-anim aria-label="Founder fact sheet">
-        <div><dt>Company</dt><dd>Warp Laboratory Inc</dd></div>
-        <div><dt>Product</dt><dd>Droplet — the personal AI cloud</dd></div>
-        <div><dt>Team</dt><dd>3 founders · Stefan, Romain, Samantha</dd></div>
+      <dl className="founder-facts" data-anim aria-label="Fact sheet">
+        <div><dt>Role</dt><dd>Founder &amp; CEO, Warp Laboratory Inc</dd></div>
+        <div><dt>Company site</dt><dd><a href="https://warp-lab.ai" target="_blank" rel="noopener noreferrer" className="hero-inline">warp-lab.ai ↗</a></dd></div>
+        <div><dt>Working on</dt><dd><a href="#droplet" className="hero-inline">Droplet</a> — on-prem AI for regulated SMBs</dd></div>
         <div><dt>Stage</dt><dd>Working code · Hardware v0 operational</dd></div>
-        <div><dt>Status</dt><dd>Pre-seed · Stefan full-time · Romain &amp; Sam joining on funding</dd></div>
-        <div><dt>Domain</dt><dd>Edge AI · Privacy-first hardware · On-device integration</dd></div>
+        <div><dt>Status</dt><dd>Full-time founder</dd></div>
         <div><dt>Background</dt><dd>6+ yrs field engineering · OT / IT</dd></div>
-        <div><dt>Based</dt><dd>Costa Mesa, California, USA</dd></div>
-        <div><dt>Open to</dt><dd>Investors · Design partners · Advisors · Operators</dd></div>
+        <div><dt>Based</dt><dd>Costa Mesa, California</dd></div>
       </dl>
-
-      <div className="founding-team" data-anim>
-        <div className="ft-eye">
-          <span className="ft-lab">Founding Team · 03</span>
-          <span className="ft-rule"/>
-        </div>
-        <div className="ft-grid">
-          {FOUNDING_TEAM.map((p, i) => (
-            <article className="ft-card" key={i}>
-              <div className="ft-name">{p.name}</div>
-              <div className="ft-role">{p.role}</div>
-              <p className="ft-blurb">{p.blurb}</p>
-              <div className="ft-links">
-                {p.site && (
-                  <a href={p.site.href} target="_blank" rel="noopener noreferrer">{p.site.label} <span className="ft-arrow">↗</span></a>
-                )}
-                {p.linkedin && (
-                  <a href={p.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <span className="ft-arrow">↗</span></a>
-                )}
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-      <p data-anim>
-        I'm <strong>building <a href="#droplet" className="hero-inline">Droplet</a> full-time</strong> —
-        an on-prem AI appliance for SMBs in regulated and security-sensitive verticals.
-        The thesis: privacy-first by architecture, configured in plain English so a
-        25-person firm doesn't need to hire a sysadmin to run it.
-      </p>
-      <p data-anim>
-        The expertise behind it is six years of field engineering in environments
-        where <strong>downtime writes the headline</strong> — utilities, defense-adjacent
-        agencies, international retail. Physical security, OT/IT convergence, networking,
-        fiber, radar, PLC and sensor aggregation. I have owned the full arc — requirements,
-        architecture, BoM, install, commissioning, QA/QC, and as-builts. I write the
-        standard, then I build to it.
-      </p>
-      <p data-anim>
-        Droplet is what happens when an operator who has lived inside fragmented
-        consumer-tech stacks builds the integrated alternative. Every seam I'm designing
-        out, I have lived with.
-      </p>
       <div className="hobbies-block" data-anim>
         <div className="hobbies-eye">
           <span className="hobbies-lab">Off-hours · Field Notes</span>
@@ -510,106 +412,29 @@ function Droplet() {
     <section id="droplet" className="droplet-sec">
       <div className="eyebrow">
         <span className="id">§02</span>
-        <span className="label">Droplet · On-prem AI for regulated SMBs</span>
+        <span className="label">Droplet</span>
         <span className="rule"/>
       </div>
 
       <h2 className="sec-h2" data-anim>
-        On-prem AI for the firms that <span className="signal">can't put client data in the cloud.</span>
+        On-prem AI for regulated SMBs <span className="signal">without IT staff.</span>
       </h2>
 
       <p className="sec-lede" data-anim>
-        Regulated and security-sensitive SMBs — law, healthcare, real-estate firms with
-        lending arms, architecture, small defense contractors — are being pushed off cloud
-        AI by clients, regulators, and underwriters. Droplet is a single on-device
-        appliance that runs storage, networking, and a local LLM behind one auth
-        boundary. Drafting, summarization, internal-document Q&amp;A, automation —
-        the same work staff would do in cloud SaaS, with nothing leaving the building.
-        Prosumer/home tier follows in year 2.
-      </p>
-
-      <div className="pillar-grid" data-anim>
-        <div className="pillar">
-          <div className="pillar-n">01</div>
-          <div className="pillar-t">On-device by default</div>
-          <p>Nothing leaves the box unless the operator explicitly sends it.</p>
-        </div>
-        <div className="pillar">
-          <div className="pillar-n">02</div>
-          <div className="pillar-t">One auth boundary</div>
-          <p>One login, one update channel, one safety policy across the whole stack.</p>
-        </div>
-        <div className="pillar">
-          <div className="pillar-n">03</div>
-          <div className="pillar-t">Open-source by composition</div>
-          <p>No paid SaaS dependency in the critical path. The operator can leave at any time.</p>
-        </div>
-        <div className="pillar">
-          <div className="pillar-n">04</div>
-          <div className="pillar-t">AI safety, by construction</div>
-          <p>An agent doctrine for hardware: irreversible operations are blocked for AI by design.</p>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function Founder() {
-  return (
-    <section id="founder">
-      <div className="eyebrow">
-        <span className="id">§03</span>
-        <span className="label">Why This Founder</span>
-        <span className="rule"/>
-      </div>
-
-      <h2 className="sec-h2" data-anim>
-        I am the user. Six years, <span className="signal">uncomfortably specific.</span>
-      </h2>
-
-      <div className="founder-grid">
-        {FOUNDER_REASONS.map((f, i) => (
-          <article className="fcard" key={i} data-anim>
-            <div className="fcard-n">{f.n}</div>
-            <div className="fcard-body">
-              <h3 className="fcard-t">{f.t}</h3>
-              <p>{f.d}</p>
-            </div>
-          </article>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function Traction() {
-  return (
-    <section id="traction">
-      <div className="eyebrow">
-        <span className="id">§04</span>
-        <span className="label">Droplet · Status</span>
-        <span className="rule"/>
-      </div>
-
-      <h2 className="sec-h2" data-anim>
-        Not a deck. A <span className="signal">boot script.</span>
-      </h2>
-
-      <p className="sec-lede" data-anim>
-        The control plane is alive. A single command provisions a fresh device end-to-end —
-        identity, network isolation, on-device AI, and the integrated control surface come
-        up together, with one auth boundary across the stack. <strong>Hardware v0 prototype
-        is fully operational.</strong> Production hardware finalisation and beta is the
-        next milestone. Detailed walkthrough on request.
+        One box plugs into the network and replaces Dropbox, Microsoft 365 storage,
+        Copilot, the router, and the Wi-Fi. Internal data never leaves the building.
       </p>
 
       <p className="sec-lede" data-anim>
-        Customer signal so far: <strong>one SMB committed</strong> (photography studio,
-        $499/mo tier, after a single outbound meeting), an <strong>active pilot
-        conversation with a real-estate firm with a lending arm</strong> following a
-        recent breach, and <strong>5–10 additional SMB pilots</strong> scoped for the
-        next 60–90 days. Two V1 units shipping to first customers in the next 30 days.
-        A 20-person prosumer waitlist sits on warp-lab.ai for the year-2 home expansion.
+        Acts as the company brain. AI runs locally on an NPU and works as a unified
+        agent across files, cameras, network, smart devices, and access control —
+        single chat interface tied to the team's existing identity.
+      </p>
+
+      <p className="sec-lede" data-anim>
+        Three-tier safety: reads run automatically; writes (PoE toggles, SSID changes,
+        camera management) require user confirmation; destructive operations (reboot,
+        factory reset, severing the management connection) are blocked by design.
       </p>
 
       <div className="status-strip" data-anim>
@@ -659,8 +484,8 @@ function Experience() {
   return (
     <section id="experience">
       <div className="eyebrow">
-        <span className="id">§05</span>
-        <span className="label">Background · Field Log</span>
+        <span className="id">§03</span>
+        <span className="label">Background</span>
         <span className="rule"/>
       </div>
       <div className="xp">
@@ -693,8 +518,8 @@ function Capabilities() {
   return (
     <section id="capabilities">
       <div className="eyebrow">
-        <span className="id">§06</span>
-        <span className="label">Domain Stack · Founder-Market Fit</span>
+        <span className="id">§04</span>
+        <span className="label">Stack</span>
         <span className="rule"/>
       </div>
       <div className="caps">
@@ -714,8 +539,8 @@ function Projects() {
   return (
     <section id="projects">
       <div className="eyebrow">
-        <span className="id">§07</span>
-        <span className="label">Operator Proof Points · Selected Work</span>
+        <span className="id">§05</span>
+        <span className="label">Selected Work</span>
         <span className="rule"/>
       </div>
       <div className="work">
@@ -754,7 +579,7 @@ function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="eyebrow">
-        <span className="id">§08</span>
+        <span className="id">§06</span>
         <span className="label">Contact</span>
         <span className="rule"/>
       </div>
@@ -899,8 +724,6 @@ function App() {
         <Hero/>
         <About/>
         <Droplet/>
-        <Founder/>
-        <Traction/>
         <Experience/>
         <Capabilities/>
         <Projects/>
