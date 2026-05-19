@@ -1,4 +1,4 @@
-// Prerender the built site so crawlers (and humans) get full HTML on first byte.
+// Prerender the builts site so crawlers (and humans) get full HTML on first byte.
 // Runs after `vite build`:
 //   1. Serves dist/ on a localhost port via Node's http module
 //   2. Launches headless Chrome via puppeteer, navigates to /
